@@ -1,0 +1,139 @@
+{% load macros %}
+
+{% comment %}
+    Define a macro for each menu item, since the markup is a bit messy
+    and we don't want to copy-paste it every time
+{% endcomment %}
+
+{% macro menu_item title="" href="" description="" icon="" cap=False %}
+    <li>
+        <a data-tooltip data-options="disable_for_touch:true"
+        title="{{ description }}"
+        href="{{ href }}"
+        target="_blank"
+        class="has-tip tip-top">
+                {% if cap %}
+                    <div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div>
+                {% endif %}
+                <i class="fa {{ icon }}"></i>
+                {{ title }}
+        </a>
+    </li>
+{% endmacro %}
+
+{% comment %}
+    Here we use the macro to instantiate all the menu items.
+{% endcomment %}
+
+<div class="quick-buttons large-8 columns">
+    <ul class="box list text-center">
+
+        {% use_macro menu_item
+            title="Wikin"
+            href="https://dtek.se/wiki"
+            description="DTEK-wikin, där allt kul händer!"
+            icon="fa-book"
+        %}
+
+        {% use_macro menu_item
+            title="Twitter"
+            href="https://twitter.com/datachalmers"
+            description="Twitter!"
+            icon="fa-twitter"
+        %}
+
+        {% use_macro menu_item
+            title="Reddit"
+            href="https://www.reddit.com/r/dtek/"
+            description="Schysst subreddit med stor potential"
+            icon="fa-reddit"
+        %}
+
+        {% use_macro menu_item
+            title="Dbrus"
+            href="https://dbrus.dtek.se"
+            description="Datas alldeles egen podcast"
+            icon="fa-podcast"
+        %}
+
+        {% use_macro menu_item
+            title="Databussen"
+            href="https://dtek.se/wiki/Main/Databussen"
+            description="Mer info om Databussen"
+            icon="fa-car"
+        %}
+
+        {% use_macro menu_item
+            title="Schema"
+            href="https://se.timeedit.net/web/chalmers/db1/public/ri1Q7.html"
+            description="TimeEdit"
+            icon="fa-table"
+            cap=True
+        %}
+
+        {% use_macro menu_item
+            title="Grupprum"
+            href="https://se.timeedit.net/web/chalmers/db1/b1/"
+            description="Boka grupprum på Chalmers"
+            icon="fa-users"
+            cap=True
+        %}
+
+        {% use_macro menu_item
+            title="Kårkort"
+            href="https://kårkort.se"
+            description="Genväg för att ladda ditt kårkort"
+            icon="fa-credit-card"
+            cap=True
+        %}
+
+        {% use_macro menu_item
+            title="Cremona"
+            href="https://www.cremona.se"
+            description="Cremona bokhandel, numera kallat Store"
+            icon="fa-shopping-cart"
+            cap=True
+        %}
+
+        {% use_macro menu_item
+            title="PingPong"
+            href="https://pingpong.chalmers.se"
+            description="PingPong"
+            icon="fa-floppy-o"
+            cap=True
+        %}
+
+        {% use_macro menu_item
+            title="Karta"
+            href="https://maps.chalmers.se/#6967eb7c-ff54-4dd7-af00-9e19fcaba128"
+            description="Karta över Campus"
+            icon="fa-map"
+            cap=True
+        %}
+
+        {% macro_block menu_item icon="fa-feed" %}
+            {% macro_kwarg title %} Veckobrev {% endmacro_kwarg %}
+            {% macro_kwarg description %}
+                Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på sektionen
+            {% endmacro_kwarg %}
+            {% macro_kwarg href %} {% url 'homepage:newsletter' %} {% endmacro_kwarg %}
+        {% endmacro_block %}
+
+        {% use_macro menu_item
+            title="IRC"
+            href="https://dtek.se/wiki/Main/IRC"
+            description="Slack, fast utan GUI. För äkta Datateknologer!"
+            icon="fa-hashtag"
+        %}
+
+        {% macro_block menu_item icon="fa-question-circle" cap=True %}
+            {% macro_kwarg title %} Studiesocial hjälp {% endmacro_kwarg %}
+            {% macro_kwarg description %}
+                Om du känner att studierna går tufft,
+                du känner dig nere, känner dig kränkt eller diskriminerad,
+                eller känner dig osäker finns epost och telefonnummer att ringa här
+            {% endmacro_kwarg %}
+            {% macro_kwarg href %} {% url 'homepage:studiesocial-hjalp' %} {% endmacro_kwarg %}
+       {% endmacro_block %}
+    </ul>
+</div>

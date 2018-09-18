@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% comment %}
+    Overriding the default slideshow in the top-nav-banner by
+    setting a custom 'class' variable to show the error image instead
+{% endcomment %}
+{% block banner %}
+
+    <style>
+        #banner-pix.error {
+            background-image: url('{% static "images/hacke_dizzy.gif" %}');
+        }
+    </style>
+
+    {% include "top-nav-banner.html" with class="error" %}
+
+{% endblock banner %}
+
+
+{% comment %}
+    This page includes the optional header
+{% endcomment %}
+{% block header %}
+    {% include 'header/header.html' %}
+{% endblock header %}
+
+
+{% block content %}
+    <div class="large-5 columns" style="float: none; margin: auto;">
+        <div class="box" style="padding: 3em;">
+            <header>
+                <h2>Well, this link went nowhere...</h2>
+            </header>
+            <p>This is a typical 404-page.</p>
+            <p>If you think there's an error behind the scenes, please contact <a hrek="mailto:dHack <dhack@dtek.se>">dHack</a> with the URL and explain what you were expecting to see.</p>
+        </div>
+    </div>
+{% endblock content %}

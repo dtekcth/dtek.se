@@ -1,0 +1,80 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang=sv>
+    {% include "head.html" %}
+
+    <body class="home home-index" lang="sv">
+
+        <!-- Facebook code -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.11';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+
+
+
+    {% comment %}
+        The banner on the top of the page with a nav menu and an image slideshow.
+        By default, it displays a slideshow, but this can be overridden by including
+        it with as {% include "top-nav-banner.html" with class=... %}, with an appropriate
+        argument for the class. This is done in the banner block of a page which extends base.
+    {% endcomment %}
+    {% block banner %}
+        {% include "top-nav-banner.html" %}
+    {% endblock banner %}
+
+    <section role="main" class="wrapper">
+
+
+
+        {% comment %}
+            By default, pages don't have a header (the part with the menu with icons).
+            To add the header to a page which extends the base template (which every page should)
+            simply add {% include 'header/header.html' %} inside the header block of that page
+        {% endcomment %}
+        {% block header %}
+        {% endblock header %}
+
+        <!-- Inside this section is where all the page-specific content goes. -->
+        <section class="dashboard row">
+            {% block content %}{% endblock content %}
+        </section>
+
+    </section> <!-- main wrapper -->
+
+    {% include "footer/footer.html" %}
+
+
+
+    {% comment %}
+        The part below just includes a bunch of scripts. Yes, it's a mess, but it's IT's fault.
+    {% endcomment %}
+
+    <script src="{% static 'application.js' %}" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Create js variables for banner images path so we can use it in javascript -->
+    <script>
+        const imageDir = "{% static 'images' %}"
+    </script>
+    <script src="{% static 'mainpage.js' %}"></script>
+
+    <script src="{% static 'blockrain/blockrain.jquery.min.js' %}"></script>
+    <script>
+        if(is_touch_device()) {
+          $('#tetrisbox').hide();
+        } else {
+          $('.blockrain').blockrain({ blockWidth: 14 });
+        }
+    </script>
+
+</body>
+</html>
