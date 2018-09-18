@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
-with open(os.path.join(BASE_DIR, '../secret-key.txt')) as f:
+with open(os.path.join(BASE_DIR, 'secret-key.txt')) as f:
     SECRET_KEY = f.read().strip()
 # SECRET_KEY = '!p-)4p-y-q$5@v-ui5pimm9iwz6q3q*)xwao-v0hdd&7@px85m'
 
@@ -84,6 +84,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'dtekportal',
+        'HOST': 'db',
+        'USER': 'postgres',
+        'PORT': 5432,
     }
 }
 
