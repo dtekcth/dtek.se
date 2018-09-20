@@ -2,6 +2,6 @@ version: '3'
 
 services:
     web:
-        command: python3 manage.py runserver 0.0.0.0:8000
+        command: uwsgi --socket :8000 --module dtekportal.wsgi
         volumes:
             - ./static:/static
