@@ -7,9 +7,6 @@ services:
             POSTGRES_DB: dtekportal
     web:
         build: .
-        command: python3 manage.py runserver 0.0.0.0:8000
-        volumes:
-            - ./dtekportal:/code
         ports:
             - "8000:8000"
         depends_on:

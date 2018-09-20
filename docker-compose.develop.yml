@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    web:
+        command: python3 manage.py runserver 0.0.0.0:8000
+        volumes:
+            - ./dtekportal:/code
+        environment:
+            - DJANGO_DEBUG=1
