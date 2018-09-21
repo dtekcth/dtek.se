@@ -12,6 +12,7 @@ in Django.
 * Describe how to start the thing, i.e. you need the secret key and db
     password as txt files + how to start docker container
 * Describe what has to be set up in nginx
+* Explain how translations work
 * Describe page structure, i.e. where to find different parts of the page, what
     goes in the site global stuff vs what goes in the homepage app.
 * Describe how to use a static page as a view vs a normal view
@@ -23,6 +24,7 @@ in Django.
 
 ## TODO in code
 * Add database password!
+* Put database data in volume so that it gets preserved
 * Maybe add option to parametrize port?
     - Idea: put password and port in env-file (docker-compose thing), which can
         be updated without messing with docker-compose files

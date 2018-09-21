@@ -12,7 +12,7 @@
         href="{{ href }}"
         target="_blank"
         class="has-tip tip-top">
-                {% if cap %}
+                {% if cap == True or cap == "True" %}
                     <div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div>
                 {% endif %}
                 <i class="fa {{ icon }}"></i>
@@ -123,7 +123,7 @@
                 Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på sektionen
             {% endmacro_arg %}
             {% macro_arg %} fa-feed {% endmacro_arg %}
-            {% macro_arg %} False {% endmacro_arg %}
+            {% macro_arg %}False{% endmacro_arg %}
         {% endmacro_block %}
 
         {% use_macro menu_item
@@ -143,7 +143,7 @@
                 eller känner dig osäker finns epost och telefonnummer att ringa här
             {% endmacro_arg %}
             {% macro_arg %} fa-question-circle {% endmacro_arg %}
-            {% macro_arg %} True {% endmacro_arg %}
+            {% macro_arg %}True{% endmacro_arg %}
        {% endmacro_block %}
     </ul>
 </div>

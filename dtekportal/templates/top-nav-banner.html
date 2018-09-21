@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <header role="banner" id="banner">
     <div id="banner-pix"
@@ -11,7 +12,7 @@
             <div class="wrapper group">
                 <h1>
                     <a class="logo" href="{% url 'homepage:index' %}">
-                        <span class="logo-text">Datateknologsektionen<br />
+                        <span class="logo-text">{% trans "Datateknologsektionen" %}<br />
                             <small>Chalmers Studentkår</small></span>
                     </a>
                 </h1>
@@ -23,6 +24,11 @@
                         <li class="menu-item"><a href="https://datateknologer.se/">Jobb</a></li>
                         <li class="menu-item"><a href="https://datateknologer.se/foretag/event-och-tjanster/">Företag</a></li>
                         <li><a href="en.html"><img src="{% static 'flags/en.svg' %}" alt="En" /></a></li>
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="language" value="en">
+                            <input type="submit" value="English">
+                        </form>
                     </ul>
                 </nav>
             </div>
