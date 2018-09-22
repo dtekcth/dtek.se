@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <head>
     <meta charset="utf-8" />
@@ -10,7 +11,7 @@
     <link rel="apple-touch-icon-precomposed" href="{% static 'favicon-apple.png' %}">
     <!-- Viewport setting -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>Datateknologsektionen på Chalmers</title>
+    <title>{% trans "Datateknologsektionen på Chalmers" %}</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" media="screen" href="{% static 'styles.css' %}" />
     <link rel="stylesheet" href="{% static 'blockrain/blockrain.css' %}" />

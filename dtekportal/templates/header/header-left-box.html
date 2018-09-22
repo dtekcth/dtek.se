@@ -1,9 +1,16 @@
-<div class="front-title large-4 columns">
-    <div class="box">
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+<div class="front-title large-4 columns" >
+    <div class="box"
+         {% if LANGUAGE_CODE == "en" %}
+            style="padding-bottom: 11em;"
+         {% endif %}
+    >
         <h1>
-            <span class="detail">Teknologsektionen</span><br>
-            Datateknik<br>
-            <span class="detail">Chalmers Studentkår</span>
+            <span class="detail">{% trans "Teknologsektionen" %}</span><br>
+            {% trans "Datateknik" %}<br>
+            <span class="detail">{% trans "Chalmers Studentkår" %}</span>
         </h1>
     </div>
 </div>

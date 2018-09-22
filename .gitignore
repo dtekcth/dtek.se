@@ -3,3 +3,4 @@ secret-key.txt
 portal-env
 *.swp
 static/*
+logs/*

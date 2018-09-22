@@ -1,4 +1,5 @@
 {% load macros %}
+{% load i18n %}
 
 {% comment %}
     Define a macro for each menu item, since the markup is a bit messy
@@ -28,121 +29,223 @@
 <div class="quick-buttons large-8 columns">
     <ul class="box list text-center">
 
-        {% use_macro menu_item
-            "Wikin"
-            "https://dtek.se/wiki"
-            "DTEK-wikin, där allt kul händer!"
-            "fa-book"
-            False
-        %}
-
-        {% use_macro menu_item
-            "Twitter"
-            "https://twitter.com/datachalmers"
-            "Twitter!"
-            "fa-twitter"
-            False
-        %}
-
-        {% use_macro menu_item
-            "Reddit"
-            "https://www.reddit.com/r/dtek/"
-            "Schysst subreddit med stor potential"
-            "fa-reddit"
-            False
-        %}
-
-        {% use_macro menu_item
-            "Dbrus"
-            "https://dbrus.dtek.se"
-            "Datas alldeles egen podcast"
-            "fa-podcast"
-            False
-        %}
-
-        {% use_macro menu_item
-            "Databussen"
-            "https://dtek.se/wiki/Main/Databussen"
-            "Mer info om Databussen"
-            "fa-car"
-            False
-        %}
-
-        {% use_macro menu_item
-            "Schema"
-            "https://se.timeedit.net/web/chalmers/db1/public/ri1Q7.html"
-            "TimeEdit"
-            "fa-table"
-            True
-        %}
-
-        {% use_macro menu_item
-            "Grupprum"
-            "https://se.timeedit.net/web/chalmers/db1/b1/"
-            "Boka grupprum på Chalmers"
-            "fa-users"
-            True
-        %}
-
-        {% use_macro menu_item
-            "Kårkort"
-            "https://kårkort.se"
-            "Genväg för att ladda ditt kårkort"
-            "fa-credit-card"
-            True
-        %}
-
-        {% use_macro menu_item
-            "Cremona"
-            "https://www.cremona.se"
-            "Cremona bokhandel, numera kallat Store"
-            "fa-shopping-cart"
-            True
-        %}
-
-        {% use_macro menu_item
-            "PingPong"
-            "https://pingpong.chalmers.se"
-            "PingPong"
-            "fa-floppy-o"
-            True
-        %}
-
-        {% use_macro menu_item
-            "Karta"
-            "https://maps.chalmers.se/#6967eb7c-ff54-4dd7-af00-9e19fcaba128"
-            "Karta över Campus"
-            "fa-map"
-            True
-        %}
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Wikin" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://dtek.se/wiki
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "DTEK-wikin, där allt kul händer!" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-book
+            {% endmacro_arg %}
+            {% macro_arg %}False{% endmacro_arg %}
+        {% endmacro_block %}
 
         {% macro_block menu_item %}
-            {% macro_arg %} Veckobrev {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Twitter" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://twitter.com/datachalmers
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Twitter!" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-twitter
+            {% endmacro_arg %}
+            {% macro_arg %}False{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Reddit" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://www.reddit.com/r/dtek/
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Schysst subreddit med stor potential" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-reddit
+            {% endmacro_arg %}
+            {% macro_arg %}False{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Dbrus" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://dbrus.dtek.se
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Datas alldeles egen podcast" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-podcast
+            {% endmacro_arg %}
+            {% macro_arg %}False{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Databussen" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://dtek.se/wiki/Main/Databussen
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Mer info om Databussen" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-car
+            {% endmacro_arg %}
+            {% macro_arg %}False{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Schema" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://se.timeedit.net/web/chalmers/db1/public/ri1Q7.html
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "TimeEdit" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-table
+            {% endmacro_arg %}
+            {% macro_arg %}True{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Grupprum" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://se.timeedit.net/web/chalmers/db1/b1/
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Boka grupprum på Chalmers" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-users
+            {% endmacro_arg %}
+            {% macro_arg %}True{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Kårkort" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://kårkort.se
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Genväg för att ladda ditt kårkort" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-credit-card
+            {% endmacro_arg %}
+            {% macro_arg %}True{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Cremona" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://www.cremona.se
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Cremona bokhandel, numera kallat Store" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-shopping-cart
+            {% endmacro_arg %}
+            {% macro_arg %}True{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "PingPong" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://pingpong.chalmers.se
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "PingPong" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-floppy-o
+            {% endmacro_arg %}
+            {% macro_arg %}True{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Karta" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://maps.chalmers.se/#6967eb7c-ff54-4dd7-af00-9e19fcaba128
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Karta över Campus" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-map
+            {% endmacro_arg %}
+            {% macro_arg %}True{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Veckobrev" %}
+            {% endmacro_arg %}
             {% macro_arg %} {% url 'homepage:newsletter' %} {% endmacro_arg %}
             {% macro_arg %}
-                Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på sektionen
+                {% trans "Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på sektionen" %}
             {% endmacro_arg %}
             {% macro_arg %} fa-feed {% endmacro_arg %}
             {% macro_arg %}False{% endmacro_arg %}
         {% endmacro_block %}
 
-        {% use_macro menu_item
-            "IRC"
-            "https://dtek.se/wiki/Main/IRC"
-            "Slack, fast utan GUI. För äkta Datateknologer!"
-            "fa-hashtag"
-            False
-        %}
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "IRC" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://dtek.se/wiki/Main/IRC
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Slack, fast utan GUI. För äkta Datateknologer!" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-hashtag
+            {% endmacro_arg %}
+            {% macro_arg %}False{% endmacro_arg %}
+        {% endmacro_block %}
 
         {% macro_block menu_item %}
-            {% macro_arg %} Studiesocial hjälp {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Studiesocial hjälp" %}
+            {% endmacro_arg %}
             {% macro_arg %} {% url 'homepage:studiesocial-hjalp' %} {% endmacro_arg %}
             {% macro_arg %}
-                Om du känner att studierna går tufft,
-                du känner dig nere, känner dig kränkt eller diskriminerad,
-                eller känner dig osäker finns epost och telefonnummer att ringa här
+                {% trans "Om du känner att studierna går tufft,
+                    du känner dig nere, känner dig kränkt eller diskriminerad,
+                    eller känner dig osäker finns epost och telefonnummer att ringa här" %}
             {% endmacro_arg %}
-            {% macro_arg %} fa-question-circle {% endmacro_arg %}
+            {% macro_arg %}
+                fa-question-circle
+            {% endmacro_arg %}
             {% macro_arg %}True{% endmacro_arg %}
        {% endmacro_block %}
     </ul>

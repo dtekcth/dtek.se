@@ -6476,6 +6476,32 @@ nav ol {
     text-decoration: none;
     color: #fff
 }
+
+
+
+
+
+input.btn-flag {
+    border: 0;
+    background: transparent;
+    color: transparent;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input.btn-flag.english {
+    background-image: url('flags/en.svg')
+}
+
+input.btn-flag.swedish {
+    background-image: url('flags/sv.svg')
+}
+
 .section-navigation {
     width: 100%;
     margin: 0.75em 0
@@ -7675,7 +7701,7 @@ i.loading-indicator-feature {
 }
 .home .front-title>.box {
     margin-top: -5em;
-    height: 11em
+    height: 11em;
 }
 @media only screen and (max-width: 930px) {
     .home .front-title>.box {
