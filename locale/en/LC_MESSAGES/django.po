@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-23 00:43+0200\n"
+"POT-Creation-Date: 2018-09-23 00:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,6 +72,23 @@ msgid ""
 msgstr ""
 "Part of <a href=\"https://chalmersstudentkar.se/\">Chalmers Student Union </"
 "a>"
+
+#: templates/404.html:36
+msgid "Den gubben gick inte!"
+msgstr "Well, this link went nowhere..."
+
+#: templates/404.html:38
+msgid "Det här är en typisk 404-sida."
+msgstr "This is a typical 404 page."
+
+#: templates/404.html:39
+msgid ""
+"Om du tror det beror på ett tekniskt fel, vänligen kontakta <a hrek=\"mailto:"
+"dHack <dhack@dtek.se>\">dHack</a> med URL-en och förklara vad du förväntade "
+"dig att hitta där."
+msgstr ""
+"If you think there's an error behind the scenes, please contact <a hrek=\"mailto:"
+"dHack <dhack@dtek.se>\">dHack</a> with the URL and explain what you were expecting to see."
 
 #: templates/head.html:14
 msgid "Datateknologsektionen på Chalmers"

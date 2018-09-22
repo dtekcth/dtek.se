@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% load static %}
+{% load i18n %}
 
 
 {% comment %}
@@ -32,10 +33,10 @@
     <div class="large-5 columns" style="float: none; margin: auto;">
         <div class="box" style="padding: 3em;">
             <header>
-                <h2>Well, this link went nowhere...</h2>
+                <h2>{% trans "Den gubben gick inte!" %}</h2>
             </header>
-            <p>This is a typical 404-page.</p>
-            <p>If you think there's an error behind the scenes, please contact <a hrek="mailto:dHack <dhack@dtek.se>">dHack</a> with the URL and explain what you were expecting to see.</p>
+            <p>{% trans "Det här är en typisk 404-sida." %}</p>
+            <p>{% trans 'Om du tror det beror på ett tekniskt fel, vänligen kontakta <a hrek="mailto:dHack <dhack@dtek.se>">dHack</a> med URL-en och förklara vad du förväntade dig att hitta där.' %}</p>
         </div>
     </div>
 {% endblock content %}
