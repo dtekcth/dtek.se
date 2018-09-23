@@ -8,6 +8,8 @@ RUN mkdir /code
 RUN mkdir /static
 RUN mkdir /locale
 RUN mkdir /logs
+RUN mkdir /scripts
+
 WORKDIR /code
 ADD requirements.txt /code
 RUN pip install -r requirements.txt

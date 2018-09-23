@@ -2,7 +2,8 @@ version: '3'
 
 services:
     web:
-        command: python3 manage.py runserver 0.0.0.0:8000
+        # use wait for it script to make sure db is ready before launching
+        command: ["/scripts/wait-for-it.sh", "db:5432", "--", "python", "manage.py", "runserver", "0.0.0.0:8000"]
         volumes:
             - ./dtekportal:/code
         environment:

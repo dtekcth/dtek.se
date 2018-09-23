@@ -4,3 +4,4 @@ portal-env
 *.swp
 static/*
 logs/*
+db

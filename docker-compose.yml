@@ -5,6 +5,9 @@ services:
         image: postgres
         environment:
             POSTGRES_DB: dtekportal
+        volumes:
+            # Makes database data persist even if we restart/rebuild container
+            - ./db:/var/lib/postgresql/data
     web:
         build: .
         ports:
@@ -14,3 +17,4 @@ services:
         volumes:
             - ./locale:/locale
             - ./logs:/logs
+            - ./scripts:/scripts
