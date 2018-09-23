@@ -6492,6 +6492,8 @@ input.btn-flag {
 
     background-position: center;
     background-repeat: no-repeat;
+
+    cursor: pointer;
 }
 
 input.btn-flag.english {
