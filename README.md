@@ -27,14 +27,14 @@ to the `static` directory in the dtek portal directory.
 ```
 
 server {
-	listen 80;
-	listen [::]:80;
-	server_name dtek.se www.dtek.se local.dtek.se sagge.dtek.se;
+    listen 80;
+    listen [::]:80;
+    server_name dtek.se www.dtek.se local.dtek.se sagge.dtek.se;
 
-	location / {
+    location / {
         uwsgi_pass django;
         include /etc/nginx/uwsgi_params;
-	}
+    }
 
     location /static/ {
         alias /path/to/dtek/portal/static/;
