@@ -7,6 +7,70 @@ introduced, which was accomplished by copying the Swedish html file and changing
 all the Swedish strings into English. Therefore, BS decided to rewrite the thing
 in Django.
 
+## Nginx setup
+
+Here's what you need to set up in nginx to get the site running:
+
+First of all, you must define the port or socket that django uses. Replace 8000
+below with the port that your docker image exposes.
+
+```
+upstream django {
+    server localhost:8000;
+}
+
+```
+
+The location `/` should uswgi pass to django, and `/static/` should be an alias
+to the `static` directory in the dtek portal directory.
+
+```
+
+server {
+	listen 80;
+	listen [::]:80;
+	server_name dtek.se www.dtek.se local.dtek.se sagge.dtek.se;
+
+	location / {
+        uwsgi_pass django;
+        include /etc/nginx/uwsgi_params;
+	}
+
+    location /static/ {
+        alias /path/to/dtek/portal/static/;
+    }
+}
+```
+
+Note that each `server_name` must also be added to `ALLOWED_HOSTS` in
+`settings.py`.
+
+## Starting the site
+
+Before starting the site, you must add a few secrets to the project directory
+that are not checked in to Git:
+
+* In the `dtekportal` directory, create a file called `secret-key.txt`. In this
+    file you must place a secret key for django. Just google "Django Secret Key
+    Generator" or something like that and you will find it. Just paste the plain
+    text without any quotes or newlines into `secret-key.txt`.
+
+Once this is done and nginx is set up properly, it should be possible to start the site. First of
+all, you need to build the container using `make build`.
+
+To start the site in a development environment, (meaning DEBUG is set to TRUE in
+django among other things run `make up-develop` and the site should be
+accessible at `localhost:8000` or whatever port your docker container exposes.
+If django complains about having unapplied migrations, you might have to run
+`(sudo) docker-compose run web python3 manage.py migrate`, then restart the
+container by running `make down` followed by `make up-develop`.
+
+To start the site in a production environment, instead run `make up-prod` after
+building the container. The site should now be accessible at the domains
+specified in `server_name` in the nginx config. If you want to try running the
+production environment locally, but do not want to 
+
+
 ## TODO in documentation
 
 * Describe how to start the thing, i.e. you need the secret key and db
