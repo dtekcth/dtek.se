@@ -59,7 +59,7 @@ Once this is done and nginx is set up properly, it should be possible to start t
 all, you need to build the container using `make build`.
 
 To start the site in a development environment, (meaning DEBUG is set to TRUE in
-django among other things run `make up-develop` and the site should be
+django among other things) run `make up-develop` and the site should be
 accessible at `localhost:8000` or whatever port your docker container exposes.
 If django complains about having unapplied migrations, you might have to run
 `(sudo) docker-compose run web python3 manage.py migrate`, then restart the
@@ -67,8 +67,10 @@ container by running `make down` followed by `make up-develop`.
 
 To start the site in a production environment, instead run `make up-prod` after
 building the container. The site should now be accessible at the domains
-specified in `server_name` in the nginx config. If you want to try running the
-production environment locally, but do not want to 
+specified in `server_name` in the nginx config (provided that the domains in
+question are pointed at the correct IP). If you want to try running the
+production environment locally without pointing a domain to your IP, you can
+just add that domain to your `host` file (Google is your friend).
 
 
 ## TODO in documentation
