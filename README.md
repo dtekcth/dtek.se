@@ -1,11 +1,11 @@
 Table of Contents
 =================
 
-   * [Table of Contents](#table-of-contents)
    * [Dtek portal](#dtek-portal)
    * [Setup](#setup)
       * [Nginx setup](#nginx-setup)
       * [Starting the site](#starting-the-site)
+      * [Creating a superuser](#creating-a-superuser)
    * [How the site works](#how-the-site-works)
       * [Page structure](#page-structure)
          * [Global](#global)
@@ -13,7 +13,7 @@ Table of Contents
          * [URL](#url)
       * [Creating a static page](#creating-a-static-page)
       * [Creating links to internal urls](#creating-links-to-internal-urls)
-      * [TODO in documentation](#todo-in-documentation)
+      * [Translations](#translations)
 
 # Dtek portal
 
@@ -102,6 +102,10 @@ question are pointed at the correct IP). If you want to try running the
 production environment locally without pointing a domain to your IP, you can
 just add that domain to your `host` file (Google is your friend).
 
+## Creating a superuser
+
+If you're starting the site for the first time, it's probably a good idea to create a superuser for the admin interface. (For now, the site is just static content, meaning the admin interface is unused and creating a superuser might not be necessary. It feels like it might be a good idea to do it anyway, though). To do this, start up the container and run `(sudo) docker-compose exec web /bin/sh -c "python3 manage.py createsuperuser`.
+
 # How the site works
 
 An individual who wishes to edit this website should possess some rudimentary
@@ -189,9 +193,9 @@ Instead, use django's url functions. For instance, to link to the index page in 
 where `homepage` is the namespace of your app, and `index` is the `name`
 parameter in the url as defined in `urls.py`.
 
-## TODO in documentation
+## Translations
 
-* Explain how translations work
-* Describe what hacks are being used and why, i.e. the multi line tag hack and
-    the django-macro package
+The website is written with Swedish as its original language. In order to make a string translatable,  it must be wrapped in a function. For details on how to do this in pyton code and template code respectively, see the [Django docs on translation](https://docs.djangoproject.com/en/2.1/topics/i18n/translation/).
 
+The mapping from Swedish to English lives in `locale/en/LC_MESSAGES/django.po
+`. When you have edited a file and added strings that need to be created, run `make makemessages`. This will update the .po file to contain the new strings, whose translation can now be filled in. For the website to update, you need to compile the .po file. This can be done by running `make compilemessages`. If this does not work, try stopping the container using `make down` and starting it up again; the makefile is configured to compile the messages as the container starts.
