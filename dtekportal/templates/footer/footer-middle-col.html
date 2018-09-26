@@ -1,9 +1,12 @@
+{% load static %}
+{% load i18n %}
+
 <!-- DTEK Kontaktuppgifter -->
 <section class="large-4 columns">
     <div class="footer-contact">
         <div class="row">
             <div class="column small-6 large-8 text-right">
-                <dt>Kontakt</dt>
+                <dt>{% trans "Kontakt" %}</dt>
             </div>
             <div class="column small-6 large-4">
                 <dd><a href="mailto:styret@dtek.se">styret@dtek.se</a></dd>
@@ -11,7 +14,7 @@
         </div>
         <div class="row">
             <div class="column small-6 large-8 text-right">
-                <dt>Postadress</dt>
+                <dt>{% trans "Postadress" %}</dt>
             </div>
             <div class="column small-6 large-4">
                 <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -25,7 +28,7 @@
 
         <div class="row">
             <div class="column small-6 large-8 text-right">
-                <dt>Organisations&shy;nummer</dt>
+                <dt>{% trans "Organisationsnummer" %}</dt>
             </div>
             <div class="column small-6 large-4">
                 <dd>857209-7080</dd>

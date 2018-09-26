@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-23 00:54+0200\n"
+"POT-Creation-Date: 2018-09-26 19:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,8 +87,122 @@ msgid ""
 "dHack <dhack@dtek.se>\">dHack</a> med URL-en och förklara vad du förväntade "
 "dig att hitta där."
 msgstr ""
-"If you think there's an error behind the scenes, please contact <a hrek=\"mailto:"
-"dHack <dhack@dtek.se>\">dHack</a> with the URL and explain what you were expecting to see."
+"If you think there's an error behind the scenes, please contact <a hrek="
+"\"mailto:dHack <dhack@dtek.se>\">dHack</a> with the URL and explain what you "
+"were expecting to see."
+
+#: templates/footer/footer-foot.html:8
+msgid "Utvecklad av "
+msgstr "Developed by "
+
+#: templates/footer/footer-foot.html:8
+msgid "stulen av"
+msgstr "stolen by"
+
+#: templates/footer/footer-foot.html:8
+msgid "översatt av"
+msgstr "translated by"
+
+#: templates/footer/footer-foot.html:8
+msgid "omskriven av"
+msgstr "rewritten by"
+
+#: templates/footer/footer-foot.html:8
+msgid "mer info"
+msgstr "more info"
+
+#: templates/footer/footer-foot.html:9
+msgid "licens"
+msgstr "licence"
+
+#: templates/footer/footer-foot.html:10
+msgid "de flesta foton tillhör"
+msgstr "most photos belong to"
+
+#: templates/footer/footer-left-col.html:13
+msgctxt "full title"
+msgid "Datateknologsektionen"
+msgstr "Student Division of Computer Science and Engineering"
+
+#: templates/footer/footer-left-col.html:14
+msgid "Chalmers Tekniska Högskola"
+msgstr "Chalmers University of Technology"
+
+#: templates/footer/footer-left-col.html:19
+msgid "en del av Chalmers Studentkår"
+msgstr "part of Chalmers Student Union"
+
+#: templates/footer/footer-middle-col.html:9
+msgid "Kontakt"
+msgstr "Contact"
+
+#: templates/footer/footer-middle-col.html:17
+msgid "Postadress"
+msgstr "Mailing Address"
+
+#: templates/footer/footer-middle-col.html:31
+msgid "Organisationsnummer"
+msgstr "Organization Number"
+
+#: templates/footer/footer-right-col.html:8
+msgid "Styrelse"
+msgstr "Board of the Division"
+
+#: templates/footer/footer-right-col.html:16
+msgid "Studienämnd"
+msgstr "Student Educational Committee"
+
+#: templates/footer/footer-right-col.html:24
+msgid "Sexmästeri"
+msgstr "Sexmästeri (Party Committee)"
+
+#: templates/footer/footer-right-col.html:32
+msgid "PR-kommitté"
+msgstr "PR-Committee"
+
+#: templates/footer/footer-right-col.html:40
+msgid "Rustmästeri"
+msgstr "Rustmästeri (Armory)"
+
+#: templates/footer/footer-right-col.html:48
+msgid "Mottagningskommitté"
+msgstr "Bachelor Reception Committee"
+
+#: templates/footer/footer-right-col.html:56
+msgid "Arbetsmarknadsgrupp"
+msgstr "Career and Business Relations"
+
+#: templates/footer/footer-right-col.html:64
+msgid "DATA-driftsförening"
+msgstr "System Administrators"
+
+#: templates/footer/footer-right-col.html:72
+msgid "Fanbärare"
+msgstr "Flag-Bearers"
+
+#: templates/footer/footer-right-col.html:80
+msgid "Idrottsförening"
+msgstr "Sports Committee"
+
+#: templates/footer/footer-right-col.html:88
+msgid "Spelförening"
+msgstr "Gaming Committee"
+
+#: templates/footer/footer-right-col.html:96
+msgid "Fotokommitté"
+msgstr "Photo Committee"
+
+#: templates/footer/footer-right-col.html:104
+msgid "Bilkommitté"
+msgstr "Division Car Maintainers"
+
+#: templates/footer/footer-right-col.html:112
+msgid "Sektionstidning"
+msgstr "Division Newspaper"
+
+#: templates/footer/footer-right-col.html:120
+msgid "Master Reception Committee"
+msgstr "Master Reception Committee"
 
 #: templates/head.html:14
 msgid "Datateknologsektionen på Chalmers"
@@ -250,3 +364,6 @@ msgstr "Jobs"
 #: templates/top-nav-banner.html:25
 msgid "Företag"
 msgstr "Companies"
+
+#~ msgid "Datateknologsektionen Full Title"
+#~ msgstr "Student Division of Computer Science and Engineering"
