@@ -110,8 +110,8 @@ If you're starting the site for the first time, it's probably a good idea to cre
 
 An individual who wishes to edit this website should possess some rudimentary
 knowledge of Django. Such a person ought to visit the [Django
-Documentation](https://docs.djangoproject.com/), whence answers to any Django
-related inquiry can be given. However, this section of the documentation will
+Documentation](https://docs.djangoproject.com/), whence answers to all Django
+related inquiry are given. However, this section of the documentation will
 give an introduction to some key aspects of Django that will be useful when
 editing this particular site:
 
