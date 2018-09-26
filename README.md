@@ -53,13 +53,18 @@ Note that each `server_name` must also be added to `ALLOWED_HOSTS` in
 
 ## Starting the site
 
-Before starting the site, you must add a few secrets to the project directory
+Before starting the site, you must add a few variables to the project directory
 that are not checked in to Git:
 
-* In the `dtekportal` directory, create a file called `secret-key.txt`. In this
-    file you must place a secret key for django. Just google "Django Secret Key
-    Generator" or something like that and you will find it. Just paste the plain
-    text without any quotes or newlines into `secret-key.txt`.
+* Django's secret key
+* Which port to expose from the container
+* Database password
+
+There is a file in the root directory of this repo called
+`variables.env.template`.  This file should be copied into a file called
+`variables.env`, where you define these variables according to your liking.
+Django's secret key should be a "large, unpredictable value".  Just google
+"Django Secret Key Generator" and you should find something.
 
 Once this is done and nginx is set up properly, it should be possible to start the site. First of
 all, you need to build the container using `make build`.
@@ -83,20 +88,10 @@ just add that domain to your `host` file (Google is your friend).
 
 * Describe how to start the thing, i.e. you need the secret key and db
     password as txt files + how to start docker container
-* Describe what has to be set up in nginx
 * Explain how translations work
 * Describe page structure, i.e. where to find different parts of the page, what
     goes in the site global stuff vs what goes in the homepage app.
 * Describe how to use a static page as a view vs a normal view
 * Describe what hacks are being used and why, i.e. the multi line tag hack and
     the django-macro package
-* Describe things that could be changed, i.e. IT's site was written with LESS,
-    our version just uses their compiled CSS (with some modifications), so it's
-    a mess. If someone wants to rewrite the thing in LESS that would be great!
 
-## TODO in code
-* Add database password!
-* Put database data in volume so that it gets preserved
-* Maybe add option to parametrize port?
-    - Idea: put password and port in env-file (docker-compose thing), which can
-        be updated without messing with docker-compose files

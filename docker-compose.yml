@@ -4,14 +4,16 @@ services:
     db:
         image: postgres
         environment:
-            POSTGRES_DB: dtekportal
+            POSTGRES_DB: "dtekportal"
+            POSTGRES_PASSWORD: "$DB_PASSWORD"
         volumes:
             # Makes database data persist even if we restart/rebuild container
             - ./db:/var/lib/postgresql/data
     web:
         build: .
+        env_file: variables.env
         ports:
-            - "8000:8000"
+            - "$EXPOSE_PORT:8000"
         depends_on:
             - db
         volumes:
