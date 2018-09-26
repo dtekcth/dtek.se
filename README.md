@@ -24,6 +24,8 @@ upstream django {
 The location `/` should uswgi pass to django, and `/static/` should be an alias
 to the `static` directory in the dtek portal directory.
 
+You should also include an alias to robots.txt so that it appears to be in the root directory of the site.
+
 ```
 
 server {
@@ -38,6 +40,10 @@ server {
 
     location /static/ {
         alias /path/to/dtek/portal/static/;
+    }
+
+    location /robots.txt {
+        alias /home/danielheurlin/Dokument/coding/dtek-portal-new/static/robots.txt;
     }
 }
 ```
