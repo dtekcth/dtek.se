@@ -1,4 +1,5 @@
 from django.urls import path
+
 from django.views.generic import TemplateView
 from django.views.generic import RedirectView
 from django.contrib.staticfiles.templatetags.staticfiles import static
@@ -11,3 +12,4 @@ urlpatterns = [
     path("newsletter", TemplateView.as_view(template_name='homepage/newsletter.html'), name='newsletter'),
     path('studiesocial-hjalp', RedirectView.as_view(url=static('homepage/studiesociala-natverket.pdf')), name='studiesocial-hjalp'),
 ]
+

@@ -16,13 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
+from django.conf.urls.i18n import i18n_patterns
 
 # Define a site-wide 404 page
 handler404 = TemplateView.as_view(template_name='404.html')
 
 urlpatterns = [
-    path('', include('homepage.urls')),
     path('404', handler404),
     path('i18n/', include('django.conf.urls.i18n')),
     path('admin/', admin.site.urls),
 ]
+
+urlpatterns += i18n_patterns (
+    path('', include('homepage.urls')),
+)
