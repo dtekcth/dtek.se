@@ -32,7 +32,7 @@ SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool('DJANGO_DEBUG' in os.environ)
 
-ALLOWED_HOSTS = ['localhost', 'dtek.se', 'www.dtek.se', 'local.dtek.se', 'sagge.dtek.se']
+ALLOWED_HOSTS = ['localhost', 'dtek.se', 'www.dtek.se', 'local.dtek.se', 'sagge.dtek.se', 'flan2.dtek.se']
 
 
 # Application definition
