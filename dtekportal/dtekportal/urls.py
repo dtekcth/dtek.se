@@ -22,7 +22,6 @@ from django.conf.urls.i18n import i18n_patterns
 handler404 = TemplateView.as_view(template_name='404.html')
 
 urlpatterns = [
-    path('', include('homepage.urls')),
     path('404', handler404),
     path('i18n/', include('django.conf.urls.i18n')),
     path('admin/', admin.site.urls),
