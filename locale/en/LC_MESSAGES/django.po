@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 19:48+0200\n"
+"POT-Creation-Date: 2019-01-16 19:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,88 +229,64 @@ msgid "DTEK-wikin, där allt kul händer!"
 msgstr "The DTEK-wiki, where all the fun is!"
 
 #: templates/header/header-menu-box.html:50
-msgid "Twitter"
-msgstr "Twitter"
-
-#: templates/header/header-menu-box.html:56
-msgid "Twitter!"
-msgstr "Twitter!"
-
-#: templates/header/header-menu-box.html:66
-msgid "Reddit"
-msgstr "Reddit"
-
-#: templates/header/header-menu-box.html:72
-msgid "Schysst subreddit med stor potential"
-msgstr "Cool subreddit with huge potential"
-
-#: templates/header/header-menu-box.html:82
 msgid "Dbrus"
 msgstr "Dbrus"
 
-#: templates/header/header-menu-box.html:88
+#: templates/header/header-menu-box.html:56
 msgid "Datas alldeles egen podcast"
 msgstr "The D-division's very own podcast"
 
-#: templates/header/header-menu-box.html:98
+#: templates/header/header-menu-box.html:66
 msgid "Databussen"
 msgstr "Databussen"
 
-#: templates/header/header-menu-box.html:104
+#: templates/header/header-menu-box.html:72
 msgid "Mer info om Databussen"
 msgstr ""
 "More info about the D-division's car &quot;Databussen&quot; (The Data Bus)"
 
-#: templates/header/header-menu-box.html:114
+#: templates/header/header-menu-box.html:82
 msgid "Schema"
 msgstr "Schedule"
 
-#: templates/header/header-menu-box.html:120
+#: templates/header/header-menu-box.html:88
 msgid "TimeEdit"
 msgstr "TimeEdit"
 
-#: templates/header/header-menu-box.html:130
+#: templates/header/header-menu-box.html:98
 msgid "Grupprum"
 msgstr "Group Rooms"
 
-#: templates/header/header-menu-box.html:136
+#: templates/header/header-menu-box.html:104
 msgid "Boka grupprum på Chalmers"
 msgstr "Book group rooms at Chalmers"
 
-#: templates/header/header-menu-box.html:146
+#: templates/header/header-menu-box.html:114
 msgid "Kårkort"
 msgstr "Student Union Card"
 
-#: templates/header/header-menu-box.html:152
+#: templates/header/header-menu-box.html:120
 msgid "Genväg för att ladda ditt kårkort"
 msgstr "Shortcut to charge your student union card"
 
-#: templates/header/header-menu-box.html:162
-msgid "Cremona"
-msgstr "Cremona"
-
-#: templates/header/header-menu-box.html:168
-msgid "Cremona bokhandel, numera kallat Store"
-msgstr "Cremona bookstore, now called Store"
-
-#: templates/header/header-menu-box.html:178
-#: templates/header/header-menu-box.html:184
+#: templates/header/header-menu-box.html:130
+#: templates/header/header-menu-box.html:136
 msgid "PingPong"
 msgstr "PingPong"
 
-#: templates/header/header-menu-box.html:194
+#: templates/header/header-menu-box.html:146
 msgid "Karta"
 msgstr "Map"
 
-#: templates/header/header-menu-box.html:200
+#: templates/header/header-menu-box.html:152
 msgid "Karta över Campus"
 msgstr "Map of campus"
 
-#: templates/header/header-menu-box.html:210
+#: templates/header/header-menu-box.html:162
 msgid "Veckobrev"
 msgstr "Newsletter"
 
-#: templates/header/header-menu-box.html:214
+#: templates/header/header-menu-box.html:166
 msgid ""
 "Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på "
 "sektionen"
@@ -318,19 +294,11 @@ msgstr ""
 "Register to receive the D-division's newsletter to get updates about what's "
 "going on at the division"
 
-#: templates/header/header-menu-box.html:222
-msgid "IRC"
-msgstr "IRC"
-
-#: templates/header/header-menu-box.html:228
-msgid "Slack, fast utan GUI. För äkta Datateknologer!"
-msgstr "Slack, but without the GUI. For real computer geeks!"
-
-#: templates/header/header-menu-box.html:238
+#: templates/header/header-menu-box.html:174
 msgid "Studiesocial hjälp"
 msgstr "Support"
 
-#: templates/header/header-menu-box.html:242
+#: templates/header/header-menu-box.html:178
 msgid ""
 "Om du känner att studierna går tufft,\n"
 "                    du känner dig nere, känner dig kränkt eller "
@@ -364,6 +332,30 @@ msgstr "Jobs"
 #: templates/top-nav-banner.html:25
 msgid "Företag"
 msgstr "Companies"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Twitter!"
+#~ msgstr "Twitter!"
+
+#~ msgid "Reddit"
+#~ msgstr "Reddit"
+
+#~ msgid "Schysst subreddit med stor potential"
+#~ msgstr "Cool subreddit with huge potential"
+
+#~ msgid "Cremona"
+#~ msgstr "Cremona"
+
+#~ msgid "Cremona bokhandel, numera kallat Store"
+#~ msgstr "Cremona bookstore, now called Store"
+
+#~ msgid "IRC"
+#~ msgstr "IRC"
+
+#~ msgid "Slack, fast utan GUI. För äkta Datateknologer!"
+#~ msgstr "Slack, but without the GUI. For real computer geeks!"
 
 #~ msgid "Datateknologsektionen Full Title"
 #~ msgstr "Student Division of Computer Science and Engineering"
