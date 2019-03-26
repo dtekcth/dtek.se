@@ -2,6 +2,7 @@ version: '3'
 
 services:
     db:
+        restart: always
         image: postgres
         environment:
             POSTGRES_DB: "dtekportal"
@@ -11,6 +12,7 @@ services:
             - ./db:/var/lib/postgresql/data
     web:
         build: .
+        restart: always
         env_file: variables.env
         ports:
             - "$EXPOSE_PORT:8000"
