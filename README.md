@@ -83,7 +83,7 @@ There is a file in the root directory of this repo called
 `variables.env.template`.  This file should be copied into a file called
 `variables.env`, where you define these variables according to your liking.
 Django's secret key should be a "large, unpredictable value".  Just google
-"Django Secret Key Generator" and you should find something.
+"[Django Secret Key Generator](https://www.miniwebtool.com/django-secret-key-generator/)" and you should find something.
 
 Once this is done and nginx is set up properly, it should be possible to start the site. First of
 all, you need to build the container using `make build`.
