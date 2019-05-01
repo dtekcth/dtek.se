@@ -40,6 +40,22 @@
                 {% trans "DTEK-wikin, där allt kul händer!" %}
             {% endmacro_arg %}
             {% macro_arg %}
+                fa-globe
+            {% endmacro_arg %}
+            {% macro_arg %}False{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
+                {% trans "Styrdokument" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://dtek.se/styrdokument
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Styrdokument" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
                 fa-book
             {% endmacro_arg %}
             {% macro_arg %}False{% endmacro_arg %}
@@ -66,7 +82,7 @@
                 {% trans "Databussen" %}
             {% endmacro_arg %}
             {% macro_arg %}
-                https://dtek.se/wiki/Main/Databussen
+                https://dbus.dtek.se
             {% endmacro_arg %}
             {% macro_arg %}
                 {% trans "Mer info om Databussen" %}
