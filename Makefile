@@ -19,6 +19,10 @@ up-develop:
 makemessages:
 	sudo -E docker-compose run web python3 manage.py makemessages -l en
 
+# Use when the container is running
+makemessages-exec:
+	sudo -E docker-compose exec web python3 manage.py makemessages -l en
+
 compilemessages:
 	sudo -E docker-compose exec web python3 manage.py compilemessages -l en
 
