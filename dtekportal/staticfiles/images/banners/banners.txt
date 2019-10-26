@@ -2,13 +2,11 @@ achtung.jpeg
 back.jpeg
 ballonger.jpeg
 delta-pub.jpeg
-drust-eldtunna.jpeg
+drust-eldtunna.jpg
 drust-grillar.jpeg
 flipper.jpeg
 forratt.jpeg
 gong.jpeg
-gotaplatsen.jpeg
-grotta.jpeg
 kandidatmiddag.jpeg
 karhus.jpeg
 kubb.jpeg
@@ -17,3 +15,6 @@ nollfinalen.jpeg
 ovvebad.jpeg
 preview.jpeg
 coding.jpg
+drone.jpg
+kandidatmiddag19.jpg
+pub.jpg
