@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-16 19:06+0100\n"
+"POT-Creation-Date: 2019-10-26 19:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,12 +125,9 @@ msgid "Datateknologsektionen"
 msgstr "Student Division of Computer Science and Engineering"
 
 #: templates/footer/footer-left-col.html:14
-msgid "Chalmers Tekniska Högskola"
-msgstr "Chalmers University of Technology"
-
-#: templates/footer/footer-left-col.html:19
-msgid "en del av Chalmers Studentkår"
-msgstr "part of Chalmers Student Union"
+#: templates/header/header-left-box.html:13 templates/top-nav-banner.html:16
+msgid "Chalmers Studentkår"
+msgstr "Chalmers Student Union"
 
 #: templates/footer/footer-middle-col.html:9
 msgid "Kontakt"
@@ -169,6 +166,7 @@ msgid "Mottagningskommitté"
 msgstr "Bachelor Reception Committee"
 
 #: templates/footer/footer-right-col.html:56
+#: templates/header/header-menu-box.html:40
 msgid "Arbetsmarknadsgrupp"
 msgstr "Career and Business Relations"
 
@@ -201,6 +199,10 @@ msgid "Sektionstidning"
 msgstr "Division Newspaper"
 
 #: templates/footer/footer-right-col.html:120
+msgid "Sektionens podcast"
+msgstr "Division podcast"
+
+#: templates/footer/footer-right-col.html:128
 msgid "Master Reception Committee"
 msgstr "Master Reception Committee"
 
@@ -216,63 +218,55 @@ msgstr "Student Division of"
 msgid "Datateknik"
 msgstr "Computer Science and Engineering"
 
-#: templates/header/header-left-box.html:13 templates/top-nav-banner.html:16
-msgid "Chalmers Studentkår"
-msgstr "Chalmers Student Union"
+#: templates/header/header-menu-box.html:34 templates/top-nav-banner.html:24
+msgid "Företag"
+msgstr "Companies"
 
-#: templates/header/header-menu-box.html:34
+#: templates/header/header-menu-box.html:50
 msgid "Wikin"
 msgstr "The Wiki"
 
-#: templates/header/header-menu-box.html:40
+#: templates/header/header-menu-box.html:56
 msgid "DTEK-wikin, där allt kul händer!"
 msgstr "The DTEK-wiki, where all the fun is!"
 
-#: templates/header/header-menu-box.html:50
-msgid "Dbrus"
-msgstr "Dbrus"
-
-#: templates/header/header-menu-box.html:56
-msgid "Datas alldeles egen podcast"
-msgstr "The D-division's very own podcast"
-
 #: templates/header/header-menu-box.html:66
+#: templates/header/header-menu-box.html:72
+msgid "Styrdokument"
+msgstr ""
+
+#: templates/header/header-menu-box.html:82
 msgid "Databussen"
 msgstr "Databussen"
 
-#: templates/header/header-menu-box.html:72
+#: templates/header/header-menu-box.html:88
 msgid "Mer info om Databussen"
 msgstr ""
 "More info about the D-division's car &quot;Databussen&quot; (The Data Bus)"
 
-#: templates/header/header-menu-box.html:82
+#: templates/header/header-menu-box.html:98
 msgid "Schema"
 msgstr "Schedule"
 
-#: templates/header/header-menu-box.html:88
+#: templates/header/header-menu-box.html:104
 msgid "TimeEdit"
 msgstr "TimeEdit"
 
-#: templates/header/header-menu-box.html:98
+#: templates/header/header-menu-box.html:114
 msgid "Grupprum"
 msgstr "Group Rooms"
 
-#: templates/header/header-menu-box.html:104
+#: templates/header/header-menu-box.html:120
 msgid "Boka grupprum på Chalmers"
 msgstr "Book group rooms at Chalmers"
 
-#: templates/header/header-menu-box.html:114
+#: templates/header/header-menu-box.html:130
 msgid "Kårkort"
 msgstr "Student Union Card"
 
-#: templates/header/header-menu-box.html:120
+#: templates/header/header-menu-box.html:136
 msgid "Genväg för att ladda ditt kårkort"
 msgstr "Shortcut to charge your student union card"
-
-#: templates/header/header-menu-box.html:130
-#: templates/header/header-menu-box.html:136
-msgid "PingPong"
-msgstr "PingPong"
 
 #: templates/header/header-menu-box.html:146
 msgid "Karta"
@@ -325,13 +319,20 @@ msgstr "Studies"
 msgid "Foton"
 msgstr "Photos"
 
-#: templates/top-nav-banner.html:24
-msgid "Jobb"
-msgstr "Jobs"
+#~ msgid "Dbrus"
+#~ msgstr "DBrus"
 
-#: templates/top-nav-banner.html:25
-msgid "Företag"
-msgstr "Companies"
+#~ msgid "PingPong"
+#~ msgstr "PingPong"
+
+#~ msgid "Chalmers Tekniska Högskola"
+#~ msgstr "Chalmers University of Technology"
+
+#~ msgid "en del av Chalmers Studentkår"
+#~ msgstr "part of Chalmers Student Union"
+
+#~ msgid "Jobb"
+#~ msgstr "Jobs"
 
 #~ msgid "Twitter"
 #~ msgstr "Twitter"

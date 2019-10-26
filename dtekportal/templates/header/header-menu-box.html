@@ -31,6 +31,22 @@
 
         {% macro_block menu_item %}
             {% macro_arg %}
+                {% trans "Företag" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                https://datateknologer.se
+            {% endmacro_arg %}
+            {% macro_arg %}
+                {% trans "Arbetsmarknadsgrupp" %}
+            {% endmacro_arg %}
+            {% macro_arg %}
+                fa-building
+            {% endmacro_arg %}
+            {% macro_arg %}False{% endmacro_arg %}
+        {% endmacro_block %}
+
+        {% macro_block menu_item %}
+            {% macro_arg %}
                 {% trans "Wikin" %}
             {% endmacro_arg %}
             {% macro_arg %}
@@ -57,22 +73,6 @@
             {% endmacro_arg %}
             {% macro_arg %}
                 fa-book
-            {% endmacro_arg %}
-            {% macro_arg %}False{% endmacro_arg %}
-        {% endmacro_block %}
-
-        {% macro_block menu_item %}
-            {% macro_arg %}
-                {% trans "Dbrus" %}
-            {% endmacro_arg %}
-            {% macro_arg %}
-                https://dbrus.dtek.se
-            {% endmacro_arg %}
-            {% macro_arg %}
-                {% trans "Datas alldeles egen podcast" %}
-            {% endmacro_arg %}
-            {% macro_arg %}
-                fa-podcast
             {% endmacro_arg %}
             {% macro_arg %}False{% endmacro_arg %}
         {% endmacro_block %}
@@ -137,22 +137,6 @@
             {% endmacro_arg %}
             {% macro_arg %}
                 fa-credit-card
-            {% endmacro_arg %}
-            {% macro_arg %}True{% endmacro_arg %}
-        {% endmacro_block %}
-
-        {% macro_block menu_item %}
-            {% macro_arg %}
-                {% trans "PingPong" %}
-            {% endmacro_arg %}
-            {% macro_arg %}
-                https://pingpong.chalmers.se
-            {% endmacro_arg %}
-            {% macro_arg %}
-                {% trans "PingPong" %}
-            {% endmacro_arg %}
-            {% macro_arg %}
-                fa-floppy-o
             {% endmacro_arg %}
             {% macro_arg %}True{% endmacro_arg %}
         {% endmacro_block %}
