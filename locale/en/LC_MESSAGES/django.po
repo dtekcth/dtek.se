@@ -206,6 +206,14 @@ msgstr "Division podcast"
 msgid "Master Reception Committee"
 msgstr "Master Reception Committee"
 
+#: templates/footer/footer-right-col.html:136
+msgid "Matlagningskommitté"
+msgstr "Cooking Committee"
+
+#: templates/footer/footer-right-col.html:142
+msgid "Jämlikhetskommitté"
+msgstr "Equality Committee"
+
 #: templates/head.html:14
 msgid "Datateknologsektionen på Chalmers"
 msgstr "Division of Computer Science and Engineering at Chalmers"
