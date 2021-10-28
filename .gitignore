@@ -5,4 +5,4 @@ portal-env
 static/*
 logs/*
 db
-variables.env
+.env

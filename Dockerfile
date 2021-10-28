@@ -5,12 +5,19 @@ ENV PYTHONUNBUFFERED 1
 RUN apt-get update && apt-get install -y gettext libgettextpo-dev
 
 RUN mkdir /code
-RUN mkdir /static
-RUN mkdir /locale
-RUN mkdir /logs
-RUN mkdir /scripts
-
 WORKDIR /code
-ADD requirements.txt /code
+COPY requirements.txt /code
 RUN pip install -r requirements.txt
-ADD dtekportal /code/
+
+COPY dtekportal .
+COPY locale /locale
+COPY scripts /scripts
+
+RUN mkdir /logs
+
+ENV DB_HOST db
+ENV DB_PORT 5432
+ENV PORT 80
+EXPOSE $PORT
+CMD /scripts/wait-for-it.sh "$DB_HOST:$DB_PORT" -- \
+      uwsgi --http-socket ":$PORT" --module dtekportal.wsgi

@@ -1,7 +1,0 @@
-version: '3'
-
-services:
-    web:
-        command: /scripts/wait-for-it.sh db:5432 -- uwsgi --socket :8000 --module dtekportal.wsgi
-        volumes:
-            - ./static:/static

@@ -28,44 +28,9 @@ in Django.
 
 ## Nginx setup
 
-Here's what you need to set up in nginx to get the site running:
-
-First of all, you must define the port or socket that django uses. Replace 8000
-below with the port that your docker image exposes.
-
-```
-upstream django {
-    server localhost:8000;
-}
-
-```
-
-The location `/` should uswgi pass to django, and `/static/` should be an alias
-to the `static` directory in the dtek portal directory.
-
-You should also include an alias to robots.txt so that it appears to be in the root directory of the site.
-
-```
-
-server {
-    listen 80;
-    listen [::]:80;
-    server_name dtek.se www.dtek.se local.dtek.se sagge.dtek.se;
-
-    location / {
-        uwsgi_pass django;
-        include /etc/nginx/uwsgi_params;
-    }
-
-    location /static/ {
-        alias /path/to/dtek/portal/static/;
-    }
-
-    location /robots.txt {
-        alias /home/danielheurlin/Dokument/coding/dtek-portal-new/static/robots.txt;
-    }
-}
-```
+The service can either be run as a self-contained service as exemplified by the
+compose file or hosted by an external nginx instance. Refer to site.conf for an
+example of an nginx server configuration.
 
 Note that each `server_name` must also be added to `ALLOWED_HOSTS` in
 `settings.py`.
