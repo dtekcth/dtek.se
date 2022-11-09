@@ -32,7 +32,10 @@ SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool('DJANGO_DEBUG' in os.environ)
 
-ALLOWED_HOSTS = ['localhost', 'dtek.se', 'www.dtek.se', 'local.dtek.se', 'sagge.dtek.se', 'flan2.dtek.se']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS.extend(os.environ.get('DJANGO_ALLOWED_HOSTS', '').split(','))
+
+#ALLOWED_HOSTS = ['localhost', 'dtek.se', 'www.dtek.se', 'local.dtek.se', 'sagge.dtek.se', 'flan2.dtek.se']
 
 
 # Application definition
@@ -87,11 +90,11 @@ WSGI_APPLICATION = 'dtekportal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dtekportal',
-        'HOST': 'db',
-        'USER': 'postgres',
-        'PORT': 5432,
-        'PASSWORD' : os.environ['DB_PASSWORD'],
+        'NAME': os.environ.get('DB_NAME'),
+        'HOST': os.environ.get('DB_HOST'),
+        'USER': os.environ.get('DB_USER'),
+        'PORT': os.environ.get('DB_PORT'),
+        'PASSWORD' : os.environ.get('DB_PASSWORD'),
     }
 }
 
