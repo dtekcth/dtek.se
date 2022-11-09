@@ -15,6 +15,13 @@ COPY locale /locale
 
 RUN mkdir /logs
 
+# Default values to match previous hardcoded values
+ENV DJANGO_ALLOWED_HOSTS="dtek.se,www.dtek.se"
+ENV DB_NAME="dtekportal"
+ENV DB_USER="postgres"
+ENV DB_HOST="db"
+ENV DB_PORT="5432"
+
 EXPOSE 80
 
 CMD ["uwsgi", "--socket", "0.0.0.0:3000", \
