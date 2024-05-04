@@ -45,8 +45,8 @@ that are not checked in to Git:
 * Database password
 
 There is a file in the root directory of this repo called
-`variables.env.template`.  This file should be copied into a file called
-`variables.env`, where you define these variables according to your liking.
+`.env.template`.  This file should be copied into a file called
+`.env`, where you define these variables according to your liking.
 Django's secret key should be a "large, unpredictable value".  Just google
 "[Django Secret Key Generator](https://www.miniwebtool.com/django-secret-key-generator/)" and you should find something.
 

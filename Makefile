@@ -1,6 +1,6 @@
 #!make
-include variables.env
-export $(shell sed 's/=.*//' variables.env)
+include .env
+export $(shell sed 's/=.*//' .env)
 
 test:
 	env

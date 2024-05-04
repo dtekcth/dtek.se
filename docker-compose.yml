@@ -19,6 +19,7 @@ services:
             DB_PASSWORD: "$DB_PASSWORD"
             DB_HOST: "db"
             DB_PORT: "5432"
+            DJANGO_SECRET_KEY: "$DJANGO_SECRET_KEY"
         depends_on:
             - db
         volumes:
