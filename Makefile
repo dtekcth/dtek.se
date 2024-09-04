@@ -22,11 +22,9 @@ refreshdb:
 	sudo -E docker compose exec web python3 manage.py migrate
 
 makemessages:
-	sudo -E docker compose exec web python3 manage.py makemessages -l en
-	sudo -E docker compose exec web python3 manage.py makemessages -l sv
+	sudo -E docker compose exec web python3 manage.py makemessages -a
 	sudo -E docker compose cp web:/locale .
 
 compilemessages:
 	sudo -E docker compose cp ./locale web:.
-	sudo -E docker compose exec web python3 manage.py compilemessages -l en
-	sudo -E docker compose exec web python3 manage.py compilemessages -l sv
+	sudo -E docker compose exec web python3 manage.py compilemessages
