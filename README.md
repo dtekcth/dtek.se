@@ -162,5 +162,6 @@ parameter in the url as defined in `urls.py`.
 
 The website is written with Swedish as its original language. In order to make a string translatable,  it must be wrapped in a function. For details on how to do this in pyton code and template code respectively, see the [Django docs on translation](https://docs.djangoproject.com/en/2.1/topics/i18n/translation/).
 
-The mapping from Swedish to English lives in `locale/en/LC_MESSAGES/django.po
-`. When you have edited a file and added strings that need to be created, run `make makemessages`. This will update the .po file to contain the new strings, whose translation can now be filled in. For the website to update, you need to compile the .po file. This can be done by running `make compilemessages`. If this does not work, try stopping the container using `make down` and starting it up again; the makefile is configured to compile the messages as the container starts.
+The mapping from Swedish to English lives in `locale/en/LC_MESSAGES/django.po`. When you have edited a file and added strings that need to be created, run `make makemessages`. This will update the .po file to contain the new strings, whose translations can now be filled in. Any translation strings that have been marked as "fuzzy" will be ignored by Django, so make sure to clean those up before finishing.
+
+For the website to update, you need to compile the .po file. This can be done by running `make compilemessages`. If this does not work, try stopping the container using `make down` and starting it up again; the makefile is configured to compile the messages as the container starts.
