@@ -18,9 +18,6 @@ up-develop:
 	sudo -E docker-compose run web /bin/sh -c "python3 manage.py compilemessages -l en"
 	sudo -E docker-compose -f docker-compose.yml -f docker-compose.develop.yml up
 
-refreshdb:
-	sudo -E docker compose exec web python3 manage.py migrate
-
 makemessages:
 	sudo -E docker compose exec web python3 manage.py makemessages -a
 	sudo -E docker compose cp web:/locale .
