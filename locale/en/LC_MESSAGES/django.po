@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-04 19:59+0200\n"
+"POT-Creation-Date: 2024-09-04 20:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,45 +338,3 @@ msgstr "Studies"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Photos"
-
-#~ msgid "Dbrus"
-#~ msgstr "DBrus"
-
-#~ msgid "PingPong"
-#~ msgstr "PingPong"
-
-#~ msgid "Chalmers Tekniska Högskola"
-#~ msgstr "Chalmers University of Technology"
-
-#~ msgid "en del av Chalmers Studentkår"
-#~ msgstr "part of Chalmers Student Union"
-
-#~ msgid "Jobb"
-#~ msgstr "Jobs"
-
-#~ msgid "Twitter"
-#~ msgstr "Twitter"
-
-#~ msgid "Twitter!"
-#~ msgstr "Twitter!"
-
-#~ msgid "Reddit"
-#~ msgstr "Reddit"
-
-#~ msgid "Schysst subreddit med stor potential"
-#~ msgstr "Cool subreddit with huge potential"
-
-#~ msgid "Cremona"
-#~ msgstr "Cremona"
-
-#~ msgid "Cremona bokhandel, numera kallat Store"
-#~ msgstr "Cremona bookstore, now called Store"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
-#~ msgid "Slack, fast utan GUI. För äkta Datateknologer!"
-#~ msgstr "Slack, but without the GUI. For real computer geeks!"
-
-#~ msgid "Datateknologsektionen Full Title"
-#~ msgstr "Student Division of Computer Science and Engineering"
