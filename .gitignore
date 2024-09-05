@@ -2,6 +2,7 @@ __pycache__
 secret-key.txt
 portal-env
 *.swp
+*.mo
 static/*
 logs/*
 db
