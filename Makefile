@@ -25,3 +25,9 @@ makemessages:
 compilemessages:
 	sudo -E docker compose cp ./locale web:.
 	sudo -E docker compose exec web python3 manage.py compilemessages
+
+build:
+	sudo -E docker-compose build
+
+down:
+	sudo -E docker-compose down
