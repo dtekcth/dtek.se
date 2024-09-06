@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-04 21:03+0200\n"
+"POT-Creation-Date: 2024-09-04 21:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,6 +214,10 @@ msgstr "Cooking Committee"
 #: templates/footer/footer-right-col.html:144
 msgid "Jämlikhetskommitté"
 msgstr "Equality Committee"
+
+#: templates/footer/footer-right-col.html:152
+msgid "Arbetsmarknadsmässa"
+msgstr "Career Fair"
 
 #: templates/head.html:14
 msgid "Datateknologsektionen på Chalmers"
