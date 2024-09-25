@@ -35,8 +35,6 @@ DEBUG = bool('DJANGO_DEBUG' in os.environ)
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
 ALLOWED_HOSTS.extend(os.environ.get('DJANGO_ALLOWED_HOSTS', '').split(','))
 
-#ALLOWED_HOSTS = ['localhost', 'dtek.se', 'www.dtek.se', 'local.dtek.se', 'sagge.dtek.se', 'flan2.dtek.se']
-
 
 # Application definition
 

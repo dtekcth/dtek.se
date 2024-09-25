@@ -32,9 +32,6 @@ The service can either be run as a self-contained service as exemplified by the
 compose file or hosted by an external nginx instance. Refer to site.conf for an
 example of an nginx server configuration.
 
-Note that each `server_name` must also be added to `ALLOWED_HOSTS` in
-`settings.py`.
-
 ## Starting the site
 
 Before starting the site, you must add a few variables to the project directory
