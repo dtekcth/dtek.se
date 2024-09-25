@@ -2,9 +2,6 @@
 include .env
 export $(shell sed 's/=.*//' .env)
 
-test:
-	env
-
 up-develop:
 	# sleep 5 && sudo docker-compose exec web /bin/sh -c "python3 manage.py migrate" &
 	docker compose run web /bin/sh -c "python3 manage.py compilemessages -l en"
