@@ -41,7 +41,6 @@ Before starting the site, you must add a few variables to the project directory
 that are not checked in to Git:
 
 * Django's secret key
-* Which port to expose from the container
 * Database password
 
 There is a file in the root directory of this repo called `.env.template`.
@@ -51,22 +50,14 @@ unpredictable value". Just google "[Django Secret Key
 Generator](https://www.miniwebtool.com/django-secret-key-generator/)" and you
 should find something.
 
-Once this is done and nginx is set up properly, it should be possible to start
-the site. First of all, you need to build the container using `make build`.
+Once this is done, it should be possible to start the site. First of all, you
+need to build the container using `make build`.
 
-To start the site in a development environment, (meaning DEBUG is set to TRUE
-in django among other things) run `make up-develop` and the site should be
-accessible at `localhost:8000` or whatever port your docker container exposes.
-If django complains about having unapplied migrations, you might have to run
-`(sudo) docker-compose run web python3 manage.py migrate`, then restart the
-container by running `make down` followed by `make up-develop`.
-
-To start the site in a production environment, instead run `make up-prod` after
-building the container. The site should now be accessible at the domains
-specified in `server_name` in the nginx config (provided that the domains in
-question are pointed at the correct IP). If you want to try running the
-production environment locally without pointing a domain to your IP, you can
-just add that domain to your `host` file (Google is your friend).
+To start the site in a development environment, run `make up-develop` and the
+site should be accessible at `localhost:8000`. If django complains about having
+unapplied migrations, you might have to run `docker compose run web python3
+manage.py migrate`, then restart the container by running `make down` followed
+by `make up-develop`.
 
 ## Creating a superuser
 
@@ -74,8 +65,8 @@ If you're starting the site for the first time, it's probably a good idea to
 create a superuser for the admin interface. (For now, the site is just static
 content, meaning the admin interface is unused and creating a superuser might
 not be necessary. It feels like it might be a good idea to do it anyway,
-though). To do this, start up the container and run `(sudo) docker-compose exec
-web /bin/sh -c "python3 manage.py createsuperuser`.
+though). To do this, start up the container and run `docker compose exec web
+/bin/sh -c "python3 manage.py createsuperuser`.
 
 # How the site works
 
