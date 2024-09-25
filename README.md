@@ -20,9 +20,9 @@ Table of Contents
 The DTEK portal. Originally written by Chalmers IT, then Viktor downloaded the
 HTML and changed the colors, turning it into a simple static web page. However,
 maintaining it became difficult, especially when an English version was
-introduced, which was accomplished by copying the Swedish html file and changing
-all the Swedish strings into English. Therefore, BS decided to rewrite the thing
-in Django.
+introduced, which was accomplished by copying the Swedish html file and
+changing all the Swedish strings into English. Therefore, BS decided to rewrite
+the thing in Django.
 
 # Setup
 
@@ -44,17 +44,18 @@ that are not checked in to Git:
 * Which port to expose from the container
 * Database password
 
-There is a file in the root directory of this repo called
-`.env.template`.  This file should be copied into a file called
-`.env`, where you define these variables according to your liking.
-Django's secret key should be a "large, unpredictable value".  Just google
-"[Django Secret Key Generator](https://www.miniwebtool.com/django-secret-key-generator/)" and you should find something.
+There is a file in the root directory of this repo called `.env.template`.
+This file should be copied into a file called `.env`, where you define these
+variables according to your liking. Django's secret key should be a "large,
+unpredictable value". Just google "[Django Secret Key
+Generator](https://www.miniwebtool.com/django-secret-key-generator/)" and you
+should find something.
 
-Once this is done and nginx is set up properly, it should be possible to start the site. First of
-all, you need to build the container using `make build`.
+Once this is done and nginx is set up properly, it should be possible to start
+the site. First of all, you need to build the container using `make build`.
 
-To start the site in a development environment, (meaning DEBUG is set to TRUE in
-django among other things) run `make up-develop` and the site should be
+To start the site in a development environment, (meaning DEBUG is set to TRUE
+in django among other things) run `make up-develop` and the site should be
 accessible at `localhost:8000` or whatever port your docker container exposes.
 If django complains about having unapplied migrations, you might have to run
 `(sudo) docker-compose run web python3 manage.py migrate`, then restart the
@@ -69,7 +70,12 @@ just add that domain to your `host` file (Google is your friend).
 
 ## Creating a superuser
 
-If you're starting the site for the first time, it's probably a good idea to create a superuser for the admin interface. (For now, the site is just static content, meaning the admin interface is unused and creating a superuser might not be necessary. It feels like it might be a good idea to do it anyway, though). To do this, start up the container and run `(sudo) docker-compose exec web /bin/sh -c "python3 manage.py createsuperuser`.
+If you're starting the site for the first time, it's probably a good idea to
+create a superuser for the admin interface. (For now, the site is just static
+content, meaning the admin interface is unused and creating a superuser might
+not be necessary. It feels like it might be a good idea to do it anyway,
+though). To do this, start up the container and run `(sudo) docker-compose exec
+web /bin/sh -c "python3 manage.py createsuperuser`.
 
 # How the site works
 
@@ -102,8 +108,8 @@ Content that is specific to certain pages, such as the index page or the
 newsletter page, are placed inside the `homepage` app, i.e. inside
 `dtekportal/homepage/templates` or `dtekportal/homepage/static/`.
 
-If some dynamic feature is added in the future, such as a "committee pages" feature,
-this should be put in a new app.
+If some dynamic feature is added in the future, such as a "committee pages"
+feature, this should be put in a new app.
 
 ### URL
 
@@ -142,8 +148,9 @@ urlpatterns = [
 
 ## Creating links to internal urls
 
-If you want to create a link to another page on the website, DON'T hardcode the url!
-Instead, use django's url functions. For instance, to link to the index page in a template:
+If you want to create a link to another page on the website, DON'T hardcode the
+url!  Instead, use django's url functions. For instance, to link to the index
+page in a template:
 
 ```python
 {% load static %}
@@ -160,8 +167,19 @@ parameter in the url as defined in `urls.py`.
 
 ## Translations
 
-The website is written with Swedish as its original language. In order to make a string translatable,  it must be wrapped in a function. For details on how to do this in pyton code and template code respectively, see the [Django docs on translation](https://docs.djangoproject.com/en/2.1/topics/i18n/translation/).
+The website is written with Swedish as its original language. In order to make
+a string translatable,  it must be wrapped in a function. For details on how to
+do this in pyton code and template code respectively, see the [Django docs on
+translation](https://docs.djangoproject.com/en/2.1/topics/i18n/translation/).
 
-The mapping from Swedish to English lives in `locale/en/LC_MESSAGES/django.po`. When you have edited a file and added strings that need to be created, run `make makemessages`. This will update the .po file to contain the new strings, whose translations can now be filled in. Any translation strings that have been marked as "fuzzy" will be ignored by Django, so make sure to clean those up before finishing.
+The mapping from Swedish to English lives in `locale/en/LC_MESSAGES/django.po`.
+When you have edited a file and added strings that need to be created, run
+`make makemessages`. This will update the .po file to contain the new strings,
+whose translations can now be filled in. Any translation strings that have been
+marked as "fuzzy" will be ignored by Django, so make sure to clean those up
+before finishing.
 
-For the website to update, you need to compile the .po file. This can be done by running `make compilemessages`. If this does not work, try stopping the container using `make down` and starting it up again; the makefile is configured to compile the messages as the container starts.
+For the website to update, you need to compile the .po file. This can be done
+by running `make compilemessages`. If this does not work, try stopping the
+container using `make down` and starting it up again; the makefile is
+configured to compile the messages as the container starts.
