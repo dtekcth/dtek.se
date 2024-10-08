@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /code
 
 # Installs gettext tools so that localizations stuff works
-RUN apt-get update && apt-get install -y build-essential gettext libgettextpo-dev
+RUN apt-get update && apt-get install -y build-essential gettext libgettextpo-dev postgresql libpq-dev
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
