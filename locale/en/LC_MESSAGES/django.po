@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-26 19:34+0200\n"
+"POT-Creation-Date: 2024-09-04 21:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,11 +30,11 @@ msgstr "The divison on Facebook"
 msgid "Mat på Campus:"
 msgstr "Food on campus:"
 
-#: homepage/templates/homepage/index/welcome-box.html:10
+#: homepage/templates/homepage/index/welcome-box.html:11
 msgid "Välkommen"
 msgstr "Welcome"
 
-#: homepage/templates/homepage/index/welcome-box.html:14
+#: homepage/templates/homepage/index/welcome-box.html:15
 msgid ""
 "Detta är DTEK-portalen, med ett gäng nyttiga länkar till ställen där du kan "
 "tänkas vilja gå."
@@ -42,17 +42,17 @@ msgstr ""
 "This is the DTEK portal, containing a bunch of useful links to places you "
 "might want to go."
 
-#: homepage/templates/homepage/index/welcome-box.html:16
+#: homepage/templates/homepage/index/welcome-box.html:17
 msgid ""
 "Datateknologsektionen är en icke vinstdrivande organisation som är till för "
 "alla studenter på civilingenjörsprogrammet Datateknik på Chalmers och dess "
-"relaterade <a class=\"wikilink\" href=\"//dtek.se/wiki/Main/Masterprogram"
-"\">masterprogram</a>. Vi ordnar <a class=\"wikilink\" href=\"//dtek.se/wiki/"
-"Main/Mottagning\">mottagning</a> för nyantagna, arrangerar <a class="
-"\"categorylink\" href=\"//dtek.se/wiki/Kategorier/Fester\">fester</a>, "
-"bedriver <a class=\"wikilink\" href=\"https://dns.dtek.se/"
-"\">studiebevakning</a> och <a class=\"wikilink\" href=\"//dtek.se/wiki/Main/"
-"Index\">mycket mer</a>."
+"relaterade <a class=\"wikilink\" href=\"https://wiki.dtek.se/wiki/"
+"Masterprogram\">masterprogram</a>. Vi ordnar <a class=\"wikilink\" "
+"href=\"https://wiki.dtek.se/wiki/Mottagning\">mottagning</a> för nyantagna, "
+"arrangerar <a class=\"categorylink\" href=\"https://wiki.dtek.se/wiki/"
+"D6\">fester</a>, bedriver <a class=\"wikilink\" href=\"https://dns.dtek.se/"
+"\">studiebevakning</a> och <a class=\"wikilink\" href=\"https://wiki.dtek.se/"
+"wiki/Main_Page\">mycket mer</a>."
 msgstr ""
 "The Student Division of Computer Science and Engineering,&quot;Data&quot; "
 "(officially &quot;Datateknologsektionen&quot; in Swedish),is a nonprofit "
@@ -61,12 +61,13 @@ msgstr ""
 "Masterprogram\">master's programmes</a>. We arrange receptions for "
 "newlyadmitted students at both the <a class=\"wikilink\" href=\"//dtek.se/"
 "wiki/Main/Mottagning\">bachelor's</a> and <a class=\"wikilink\" href=\"//"
-"dtek.se/wiki/Main/DMNollK\">master's</a> programmes, arrange <a class="
-"\"categorylink\" href=\"//dtek.se/wiki/Kategorier/Fester\">parties</a>, <a "
-"class=\"wikilink\" href=\"https://dns.dtek.se/\">monitor your education</a> "
-"and <a class=\"wikilink\" href=\"//dtek.se/wiki/Main/Index\">much more</a>."
+"dtek.se/wiki/Main/DMNollK\">master's</a> programmes, arrange <a "
+"class=\"categorylink\" href=\"//dtek.se/wiki/Kategorier/Fester\">parties</"
+"a>, <a class=\"wikilink\" href=\"https://dns.dtek.se/\">monitor your "
+"education</a> and <a class=\"wikilink\" href=\"//dtek.se/wiki/Main/"
+"Index\">much more</a>."
 
-#: homepage/templates/homepage/index/welcome-box.html:18
+#: homepage/templates/homepage/index/welcome-box.html:19
 msgid ""
 "En del av <a href=\"https://chalmersstudentkar.se/\">Chalmers Studentkår </a>"
 msgstr ""
@@ -87,9 +88,9 @@ msgid ""
 "dHack <dhack@dtek.se>\">dHack</a> med URL-en och förklara vad du förväntade "
 "dig att hitta där."
 msgstr ""
-"If you think there's an error behind the scenes, please contact <a hrek="
-"\"mailto:dHack <dhack@dtek.se>\">dHack</a> with the URL and explain what you "
-"were expecting to see."
+"If you think there's an error behind the scenes, please contact <a "
+"hrek=\"mailto:dHack <dhack@dtek.se>\">dHack</a> with the URL and explain "
+"what you were expecting to see."
 
 #: templates/footer/footer-foot.html:8
 msgid "Utvecklad av "
@@ -210,9 +211,13 @@ msgstr "Master Reception Committee"
 msgid "Matlagningskommitté"
 msgstr "Cooking Committee"
 
-#: templates/footer/footer-right-col.html:142
+#: templates/footer/footer-right-col.html:144
 msgid "Jämlikhetskommitté"
 msgstr "Equality Committee"
+
+#: templates/footer/footer-right-col.html:152
+msgid "Arbetsmarknadsmässa"
+msgstr "Career Fair"
 
 #: templates/head.html:14
 msgid "Datateknologsektionen på Chalmers"
@@ -326,45 +331,3 @@ msgstr "Studies"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Photos"
-
-#~ msgid "Dbrus"
-#~ msgstr "DBrus"
-
-#~ msgid "PingPong"
-#~ msgstr "PingPong"
-
-#~ msgid "Chalmers Tekniska Högskola"
-#~ msgstr "Chalmers University of Technology"
-
-#~ msgid "en del av Chalmers Studentkår"
-#~ msgstr "part of Chalmers Student Union"
-
-#~ msgid "Jobb"
-#~ msgstr "Jobs"
-
-#~ msgid "Twitter"
-#~ msgstr "Twitter"
-
-#~ msgid "Twitter!"
-#~ msgstr "Twitter!"
-
-#~ msgid "Reddit"
-#~ msgstr "Reddit"
-
-#~ msgid "Schysst subreddit med stor potential"
-#~ msgstr "Cool subreddit with huge potential"
-
-#~ msgid "Cremona"
-#~ msgstr "Cremona"
-
-#~ msgid "Cremona bokhandel, numera kallat Store"
-#~ msgstr "Cremona bookstore, now called Store"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
-#~ msgid "Slack, fast utan GUI. För äkta Datateknologer!"
-#~ msgstr "Slack, but without the GUI. For real computer geeks!"
-
-#~ msgid "Datateknologsektionen Full Title"
-#~ msgstr "Student Division of Computer Science and Engineering"

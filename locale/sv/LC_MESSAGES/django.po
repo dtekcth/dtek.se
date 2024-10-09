@@ -1,0 +1,331 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-04 21:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: homepage/templates/homepage/index/cal-box.html:5
+msgid "Arrangemangskalender"
+msgstr "Arrangemangskalender"
+
+#: homepage/templates/homepage/index/fb-box.html:5
+msgid "Sektionen på Facebook"
+msgstr "Sektionen på Facebook"
+
+#: homepage/templates/homepage/index/food-box.html:5
+msgid "Mat på Campus:"
+msgstr "Mat på Campus:"
+
+#: homepage/templates/homepage/index/welcome-box.html:11
+msgid "Välkommen"
+msgstr "Välkommen"
+
+#: homepage/templates/homepage/index/welcome-box.html:15
+msgid ""
+"Detta är DTEK-portalen, med ett gäng nyttiga länkar till ställen där du kan "
+"tänkas vilja gå."
+msgstr ""
+"Detta är DTEK-portalen, med ett gäng nyttiga länkar till ställen där du kan "
+"tänkas vilja gå."
+
+#: homepage/templates/homepage/index/welcome-box.html:17
+msgid ""
+"Datateknologsektionen är en icke vinstdrivande organisation som är till för "
+"alla studenter på civilingenjörsprogrammet Datateknik på Chalmers och dess "
+"relaterade <a class=\"wikilink\" href=\"https://wiki.dtek.se/wiki/"
+"Masterprogram\">masterprogram</a>. Vi ordnar <a class=\"wikilink\" "
+"href=\"https://wiki.dtek.se/wiki/Mottagning\">mottagning</a> för nyantagna, "
+"arrangerar <a class=\"categorylink\" href=\"https://wiki.dtek.se/wiki/"
+"D6\">fester</a>, bedriver <a class=\"wikilink\" href=\"https://dns.dtek.se/"
+"\">studiebevakning</a> och <a class=\"wikilink\" href=\"https://wiki.dtek.se/"
+"wiki/Main_Page\">mycket mer</a>."
+msgstr ""
+"Datateknologsektionen är en icke vinstdrivande organisation som är till för "
+"alla studenter på civilingenjörsprogrammet Datateknik på Chalmers och dess "
+"relaterade <a class=\"wikilink\" href=\"https://wiki.dtek.se/wiki/"
+"Masterprogram\">masterprogram</a>. Vi ordnar <a class=\"wikilink\" "
+"href=\"https://wiki.dtek.se/wiki/Mottagning\">mottagning</a> för nyantagna, "
+"arrangerar <a class=\"categorylink\" href=\"https://wiki.dtek.se/wiki/"
+"D6\">fester</a>, bedriver <a class=\"wikilink\" href=\"https://dns.dtek.se/"
+"\">studiebevakning</a> och <a class=\"wikilink\" href=\"https://wiki.dtek.se/"
+"wiki/Main_Page\">mycket mer</a>."
+
+#: homepage/templates/homepage/index/welcome-box.html:19
+msgid ""
+"En del av <a href=\"https://chalmersstudentkar.se/\">Chalmers Studentkår </a>"
+msgstr ""
+"En del av <a href=\"https://chalmersstudentkar.se/\">Chalmers Studentkår </a>"
+
+#: templates/404.html:36
+msgid "Den gubben gick inte!"
+msgstr "Den gubben gick inte!"
+
+#: templates/404.html:38
+msgid "Det här är en typisk 404-sida."
+msgstr "Det här är en typisk 404-sida."
+
+#: templates/404.html:39
+msgid ""
+"Om du tror det beror på ett tekniskt fel, vänligen kontakta <a hrek=\"mailto:"
+"dHack <dhack@dtek.se>\">dHack</a> med URL-en och förklara vad du förväntade "
+"dig att hitta där."
+msgstr ""
+"Om du tror det beror på ett tekniskt fel, vänligen kontakta <a hrek=\"mailto:"
+"dHack <dhack@dtek.se>\">dHack</a> med URL-en och förklara vad du förväntade "
+"dig att hitta där."
+
+#: templates/footer/footer-foot.html:8
+msgid "Utvecklad av "
+msgstr "Utvecklad av "
+
+#: templates/footer/footer-foot.html:8
+msgid "stulen av"
+msgstr "stulen av"
+
+#: templates/footer/footer-foot.html:8
+msgid "översatt av"
+msgstr "översatt av"
+
+#: templates/footer/footer-foot.html:8
+msgid "omskriven av"
+msgstr "omskriven av"
+
+#: templates/footer/footer-foot.html:8
+msgid "mer info"
+msgstr "mer info"
+
+#: templates/footer/footer-foot.html:9
+msgid "licens"
+msgstr "licens"
+
+#: templates/footer/footer-foot.html:10
+msgid "de flesta foton tillhör"
+msgstr "de flesta foton tillhör"
+
+#: templates/footer/footer-left-col.html:13
+msgctxt "full title"
+msgid "Datateknologsektionen"
+msgstr "Datateknologsektionen"
+
+#: templates/footer/footer-left-col.html:14
+#: templates/header/header-left-box.html:13 templates/top-nav-banner.html:16
+msgid "Chalmers Studentkår"
+msgstr "Chalmers Studentkår"
+
+#: templates/footer/footer-middle-col.html:9
+msgid "Kontakt"
+msgstr "Kontakt"
+
+#: templates/footer/footer-middle-col.html:17
+msgid "Postadress"
+msgstr "Postadress"
+
+#: templates/footer/footer-middle-col.html:31
+msgid "Organisationsnummer"
+msgstr "Organisationsnummer"
+
+#: templates/footer/footer-right-col.html:8
+msgid "Styrelse"
+msgstr "Styrelse"
+
+#: templates/footer/footer-right-col.html:16
+msgid "Studienämnd"
+msgstr "Studienämnd"
+
+#: templates/footer/footer-right-col.html:24
+msgid "Sexmästeri"
+msgstr "Sexmästeri"
+
+#: templates/footer/footer-right-col.html:32
+msgid "PR-kommitté"
+msgstr "PR-kommitté"
+
+#: templates/footer/footer-right-col.html:40
+msgid "Rustmästeri"
+msgstr "Rustmästeri"
+
+#: templates/footer/footer-right-col.html:48
+msgid "Mottagningskommitté"
+msgstr "Mottagningskommitté"
+
+#: templates/footer/footer-right-col.html:56
+#: templates/header/header-menu-box.html:40
+msgid "Arbetsmarknadsgrupp"
+msgstr "Arbetsmarknadsgrupp"
+
+#: templates/footer/footer-right-col.html:64
+msgid "DATA-driftsförening"
+msgstr "DATA-driftsförening"
+
+#: templates/footer/footer-right-col.html:72
+msgid "Fanbärare"
+msgstr "Fanbärare"
+
+#: templates/footer/footer-right-col.html:80
+msgid "Idrottsförening"
+msgstr "Idrottsförening"
+
+#: templates/footer/footer-right-col.html:88
+msgid "Spelförening"
+msgstr "Spelförening"
+
+#: templates/footer/footer-right-col.html:96
+msgid "Fotokommitté"
+msgstr "Fotokommitté"
+
+#: templates/footer/footer-right-col.html:104
+msgid "Bilkommitté"
+msgstr "Bilkommitté"
+
+#: templates/footer/footer-right-col.html:112
+msgid "Sektionstidning"
+msgstr "Sektionstidning"
+
+#: templates/footer/footer-right-col.html:120
+msgid "Sektionens podcast"
+msgstr "Sektionens podcast"
+
+#: templates/footer/footer-right-col.html:128
+msgid "Master Reception Committee"
+msgstr "Master Reception Committee"
+
+#: templates/footer/footer-right-col.html:136
+msgid "Matlagningskommitté"
+msgstr "Matlagningskommitté"
+
+#: templates/footer/footer-right-col.html:144
+msgid "Jämlikhetskommitté"
+msgstr "Jämlikhetskommitté"
+
+#: templates/footer/footer-right-col.html:152
+msgid "Arbetsmarknadsmässa"
+msgstr "Arbetsmarknadsmässa"
+
+#: templates/head.html:14
+msgid "Datateknologsektionen på Chalmers"
+msgstr "Datateknologsektionen på Chalmers"
+
+#: templates/header/header-left-box.html:11
+msgid "Teknologsektionen"
+msgstr "Teknologsektionen"
+
+#: templates/header/header-left-box.html:12
+msgid "Datateknik"
+msgstr "Datateknik"
+
+#: templates/header/header-menu-box.html:34 templates/top-nav-banner.html:24
+msgid "Företag"
+msgstr "Företag"
+
+#: templates/header/header-menu-box.html:50
+msgid "Wikin"
+msgstr "Wikin"
+
+#: templates/header/header-menu-box.html:56
+msgid "DTEK-wikin, där allt kul händer!"
+msgstr "DTEK-wikin, där allt kul händer!"
+
+#: templates/header/header-menu-box.html:66
+#: templates/header/header-menu-box.html:72
+msgid "Styrdokument"
+msgstr "Styrdokument"
+
+#: templates/header/header-menu-box.html:82
+msgid "Databussen"
+msgstr "Databussen"
+
+#: templates/header/header-menu-box.html:88
+msgid "Mer info om Databussen"
+msgstr "Mer info om Databussen"
+
+#: templates/header/header-menu-box.html:98
+msgid "Schema"
+msgstr "Schema"
+
+#: templates/header/header-menu-box.html:104
+msgid "TimeEdit"
+msgstr "TimeEdit"
+
+#: templates/header/header-menu-box.html:114
+msgid "Grupprum"
+msgstr "Grupprum"
+
+#: templates/header/header-menu-box.html:120
+msgid "Boka grupprum på Chalmers"
+msgstr "Boka grupprum på Chalmers"
+
+#: templates/header/header-menu-box.html:130
+msgid "Kårkort"
+msgstr "Kårkort"
+
+#: templates/header/header-menu-box.html:136
+msgid "Genväg för att ladda ditt kårkort"
+msgstr "Genväg för att ladda ditt kårkort"
+
+#: templates/header/header-menu-box.html:146
+msgid "Karta"
+msgstr "Karta"
+
+#: templates/header/header-menu-box.html:152
+msgid "Karta över Campus"
+msgstr "Karta över Campus"
+
+#: templates/header/header-menu-box.html:162
+msgid "Veckobrev"
+msgstr "Veckobrev"
+
+#: templates/header/header-menu-box.html:166
+msgid ""
+"Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på "
+"sektionen"
+msgstr ""
+"Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på "
+"sektionen"
+
+#: templates/header/header-menu-box.html:174
+msgid "Studiesocial hjälp"
+msgstr "Studiesocial hjälp"
+
+#: templates/header/header-menu-box.html:178
+msgid ""
+"Om du känner att studierna går tufft,\n"
+"                    du känner dig nere, känner dig kränkt eller "
+"diskriminerad,\n"
+"                    eller känner dig osäker finns epost och telefonnummer "
+"att ringa här"
+msgstr ""
+"Om du känner att studierna går tufft,\n"
+"                    du känner dig nere, känner dig kränkt eller "
+"diskriminerad,\n"
+"                    eller känner dig osäker finns epost och telefonnummer "
+"att ringa här"
+
+#: templates/top-nav-banner.html:15
+msgid "Datateknologsektionen"
+msgstr "Datateknologsektionen"
+
+#: templates/top-nav-banner.html:21
+msgid "Mottagning"
+msgstr "Mottagning"
+
+#: templates/top-nav-banner.html:22
+msgid "Studier"
+msgstr "Studier"
+
+#: templates/top-nav-banner.html:23
+msgid "Foton"
+msgstr "Foton"

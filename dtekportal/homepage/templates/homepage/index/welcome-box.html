@@ -1,10 +1,11 @@
 {% load i18n %}
+{% load static %}
 
 
 <div class="box">
-    <img src="https://www.chalmers.se/SiteCollectionImages/Programmallar/Masterprogram/image3-datateknik_300.jpg" style="height:3em;
+    <img src="{% static 'datalogo.svg' %}" style="height:3em;
     position: absolute;
-    right: 10px;">
+    right: 20px;">
 
     <header>
         <h2>{% trans "Välkommen" %}</h2>
