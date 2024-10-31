@@ -24,35 +24,27 @@ msgstr "Styrdokument"
 
 #: homepage/templates/homepage/documents.html:7
 msgid "stadga"
-msgstr "<a href='https://styrdokument.dtek.se/stadgar/stadgar.pdf'>Stadga</a>"
+msgstr "Stadga"
 
 #: homepage/templates/homepage/documents.html:8
 msgid "reglemente"
-msgstr ""
-"<a href='https://styrdokument.dtek.se/reglemente/reglemente.pdf'>Reglemente</"
-"a>"
+msgstr "Reglemente"
 
 #: homepage/templates/homepage/documents.html:9
 msgid "ekonomisktreglemente"
-msgstr ""
-"<a href='https://styrdokument.dtek.se/ekonomiskt_reglemente/"
-"ekonomiskt_reglemente.pdf'>Ekonomiskt reglemente</a>"
+msgstr "Ekonomiskt reglemente"
 
 #: homepage/templates/homepage/documents.html:10
 msgid "policies"
-msgstr "<a href='https://styrdokument.dtek.se/policy/policy.pdf'>Policys</a>"
+msgstr "Policys"
 
 #: homepage/templates/homepage/documents.html:11
 msgid "incidenthantering"
-msgstr ""
-"<a href='https://styrdokument.dtek.se/incidenthantering/incidenthantering."
-"pdf'>Incidenthanterings policy</a>"
+msgstr "Incidenthanterings policy"
 
 #: homepage/templates/homepage/documents.html:12
 msgid "date-it"
-msgstr ""
-"<a href='https://styrdokument.dtek.se/date-it-styrdokument/date-it-"
-"reglemente.pdf'>DatE-IT reglemente</a>"
+msgstr "DatE-IT reglemente"
 
 #: homepage/templates/homepage/documents.html:16
 msgid "saknas"
@@ -60,14 +52,19 @@ msgstr "Saknas något?"
 
 #: homepage/templates/homepage/documents.html:17
 msgid "stadgehemsidan"
-msgstr ""
-"<a href='https://styrdokument.dtek.se/'>Hemsida</a> med alla styrdokuments filer"
+msgstr "Hemsida"
+
+#: homepage/templates/homepage/documents.html:17
+msgid "stadgetext"
+msgstr "med alla styrdokuments filer"
 
 #: homepage/templates/homepage/documents.html:18
 msgid "wikin"
-msgstr ""
-"<a href='https://wiki.dtek.se/wiki/Styrdokument'>Wikin</a> har även en lista "
-"över dokument"
+msgstr "Wikin"
+
+#: homepage/templates/homepage/documents.html:18
+msgid "wikitext"
+msgstr "har även en lista över dokument"
 
 #: homepage/templates/homepage/index/cal-box.html:5
 msgid "Arrangemangskalender"

@@ -24,35 +24,27 @@ msgstr "Documents and regulations"
 
 #: homepage/templates/homepage/documents.html:7
 msgid "stadga"
-msgstr "<a href='https://styrdokument.dtek.se/stadgar/stadgar.pdf'>Bylaws</a>"
+msgstr "Bylaws"
 
 #: homepage/templates/homepage/documents.html:8
 msgid "reglemente"
-msgstr ""
-"<a href='https://styrdokument.dtek.se/reglemente/reglemente."
-"pdf'>Regulations</a>"
+msgstr "Regulations"
 
 #: homepage/templates/homepage/documents.html:9
 msgid "ekonomisktreglemente"
-msgstr ""
-"<a href='https://styrdokument.dtek.se/ekonomiskt_reglemente/"
-"ekonomiskt_reglemente.pdf'>Economic regulations</a>"
+msgstr "Economic regulations"
 
 #: homepage/templates/homepage/documents.html:10
 msgid "policies"
-msgstr "<a href='https://styrdokument.dtek.se/policy/policy.pdf'>Policies</a>"
+msgstr "Policies"
 
 #: homepage/templates/homepage/documents.html:11
 msgid "incidenthantering"
-msgstr ""
-"<a href='https://styrdokument.dtek.se/incidenthantering/incidenthantering."
-"pdf'>Incident policy</a>"
+msgstr "Incident policy"
 
 #: homepage/templates/homepage/documents.html:12
 msgid "date-it"
-msgstr ""
-"<a href='https://styrdokument.dtek.se/date-it-styrdokument/date-it-"
-"reglemente.pdf'>DatE-IT regulation</a>"
+msgstr "DatE-IT regulation"
 
 #: homepage/templates/homepage/documents.html:16
 msgid "saknas"
@@ -60,13 +52,19 @@ msgstr "Something missing?"
 
 #: homepage/templates/homepage/documents.html:17
 msgid "stadgehemsidan"
-msgstr "<a href='https://styrdokument.dtek.se/'>Webpage</a> with all documents"
+msgstr "Webpage"
+
+#: homepage/templates/homepage/documents.html:17
+msgid "stadgetext"
+msgstr "with all documents"
 
 #: homepage/templates/homepage/documents.html:18
 msgid "wikin"
-msgstr ""
-"<a href='https://wiki.dtek.se/wiki/Styrdokument'>The wiki</a> also has a "
-"list over documents"
+msgstr "The wiki"
+
+#: homepage/templates/homepage/documents.html:18
+msgid "wikitext"
+msgstr "also has a list over documents"
 
 #: homepage/templates/homepage/index/cal-box.html:5
 msgid "Arrangemangskalender"
