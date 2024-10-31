@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<div class="large-9 columns" style="float: none; margin: auto; margin-top: -5em;">
+    <div class="box" style="padding: 3em;">
+        <h1>{% trans "StyrdokumentPage" %}</h1>
+        {% trans "stadga" %}<br/>
+        {% trans "reglemente" %}<br/>
+        {% trans "ekonomisktreglemente" %}<br/>
+        {% trans "policies" %}<br/>
+        {% trans "incidenthantering" %}<br/>
+        {% trans "date-it" %}
+
+        <br/>
+        <br/>
+        <h2>{% trans "saknas" %}</h2>
+        {% trans "stadgehemsidan" %}<br/>
+        {% trans "wikin" %}
+    </div>
+</div>
+
+{% endblock content %}

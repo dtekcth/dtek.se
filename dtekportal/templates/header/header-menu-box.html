@@ -65,9 +65,7 @@
             {% macro_arg %}
                 {% trans "Styrdokument" %}
             {% endmacro_arg %}
-            {% macro_arg %}
-                https://dtek.se/styrdokument
-            {% endmacro_arg %}
+            {% macro_arg %} {% url 'homepage:documents' %} {% endmacro_arg %}
             {% macro_arg %}
                 {% trans "Styrdokument" %}
             {% endmacro_arg %}
