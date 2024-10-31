@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-31 15:31+0100\n"
+"POT-Creation-Date: 2024-10-31 15:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,15 +54,15 @@ msgstr ""
 "<a href='https://styrdokument.dtek.se/date-it-styrdokument/date-it-"
 "reglemente.pdf'>DatE-IT regulation</a>"
 
-#: homepage/templates/homepage/documents.html:14
+#: homepage/templates/homepage/documents.html:16
 msgid "saknas"
 msgstr "Something missing?"
 
-#: homepage/templates/homepage/documents.html:15
+#: homepage/templates/homepage/documents.html:17
 msgid "stadgehemsidan"
 msgstr "<a href='https://styrdokument.dtek.se/'>Webpage</a> with all documents"
 
-#: homepage/templates/homepage/documents.html:16
+#: homepage/templates/homepage/documents.html:18
 msgid "wikin"
 msgstr ""
 "<a href='https://wiki.dtek.se/wiki/Styrdokument'>The wiki</a> also has a "
@@ -296,7 +296,7 @@ msgstr "The DTEK-wiki, where all the fun is!"
 #: templates/header/header-menu-box.html:66
 #: templates/header/header-menu-box.html:70
 msgid "Styrdokument"
-msgstr ""
+msgstr "Documents"
 
 #: templates/header/header-menu-box.html:80
 msgid "Databussen"
