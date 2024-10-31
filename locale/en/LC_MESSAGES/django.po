@@ -296,7 +296,7 @@ msgstr "The DTEK-wiki, where all the fun is!"
 #: templates/header/header-menu-box.html:66
 #: templates/header/header-menu-box.html:70
 msgid "Styrdokument"
-msgstr ""
+msgstr "Documents"
 
 #: templates/header/header-menu-box.html:80
 msgid "Databussen"
