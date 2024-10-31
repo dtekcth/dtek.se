@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-31 16:35+0100\n"
+"POT-Creation-Date: 2024-10-31 16:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr "Something missing?"
 
 #: homepage/templates/homepage/documents.html:17
 msgid "stadgehemsidan"
-msgstr "<a href='https://styrdokument.dtek.se/'>Webpage with all documents</a>"
+msgstr "<a href='https://styrdokument.dtek.se/'>Webpage</a> with all documents"
 
 #: homepage/templates/homepage/documents.html:18
 msgid "wikin"
