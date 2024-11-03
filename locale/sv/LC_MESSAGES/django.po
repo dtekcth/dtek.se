@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-04 21:23+0200\n"
+"POT-Creation-Date: 2024-10-31 16:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: homepage/templates/homepage/documents.html:6
+msgid "StyrdokumentPage"
+msgstr "Styrdokument"
+
+#: homepage/templates/homepage/documents.html:7
+msgid "stadga"
+msgstr "Stadga"
+
+#: homepage/templates/homepage/documents.html:8
+msgid "reglemente"
+msgstr "Reglemente"
+
+#: homepage/templates/homepage/documents.html:9
+msgid "ekonomisktreglemente"
+msgstr "Ekonomiskt reglemente"
+
+#: homepage/templates/homepage/documents.html:10
+msgid "policies"
+msgstr "Policys"
+
+#: homepage/templates/homepage/documents.html:11
+msgid "incidenthantering"
+msgstr "Incidenthanterings policy"
+
+#: homepage/templates/homepage/documents.html:12
+msgid "date-it"
+msgstr "DatE-IT reglemente"
+
+#: homepage/templates/homepage/documents.html:16
+msgid "saknas"
+msgstr "Saknas något?"
+
+#: homepage/templates/homepage/documents.html:17
+msgid "stadgehemsidan"
+msgstr "Hemsida"
+
+#: homepage/templates/homepage/documents.html:17
+msgid "stadgetext"
+msgstr "med alla styrdokuments filer"
+
+#: homepage/templates/homepage/documents.html:18
+msgid "wikin"
+msgstr "Wikin"
+
+#: homepage/templates/homepage/documents.html:18
+msgid "wikitext"
+msgstr "har även en lista över dokument"
 
 #: homepage/templates/homepage/index/cal-box.html:5
 msgid "Arrangemangskalender"
@@ -240,55 +288,55 @@ msgid "DTEK-wikin, där allt kul händer!"
 msgstr "DTEK-wikin, där allt kul händer!"
 
 #: templates/header/header-menu-box.html:66
-#: templates/header/header-menu-box.html:72
+#: templates/header/header-menu-box.html:70
 msgid "Styrdokument"
 msgstr "Styrdokument"
 
-#: templates/header/header-menu-box.html:82
+#: templates/header/header-menu-box.html:80
 msgid "Databussen"
 msgstr "Databussen"
 
-#: templates/header/header-menu-box.html:88
+#: templates/header/header-menu-box.html:86
 msgid "Mer info om Databussen"
 msgstr "Mer info om Databussen"
 
-#: templates/header/header-menu-box.html:98
+#: templates/header/header-menu-box.html:96
 msgid "Schema"
 msgstr "Schema"
 
-#: templates/header/header-menu-box.html:104
+#: templates/header/header-menu-box.html:102
 msgid "TimeEdit"
 msgstr "TimeEdit"
 
-#: templates/header/header-menu-box.html:114
+#: templates/header/header-menu-box.html:112
 msgid "Grupprum"
 msgstr "Grupprum"
 
-#: templates/header/header-menu-box.html:120
+#: templates/header/header-menu-box.html:118
 msgid "Boka grupprum på Chalmers"
 msgstr "Boka grupprum på Chalmers"
 
-#: templates/header/header-menu-box.html:130
+#: templates/header/header-menu-box.html:128
 msgid "Kårkort"
 msgstr "Kårkort"
 
-#: templates/header/header-menu-box.html:136
+#: templates/header/header-menu-box.html:134
 msgid "Genväg för att ladda ditt kårkort"
 msgstr "Genväg för att ladda ditt kårkort"
 
-#: templates/header/header-menu-box.html:146
+#: templates/header/header-menu-box.html:144
 msgid "Karta"
 msgstr "Karta"
 
-#: templates/header/header-menu-box.html:152
+#: templates/header/header-menu-box.html:150
 msgid "Karta över Campus"
 msgstr "Karta över Campus"
 
-#: templates/header/header-menu-box.html:162
+#: templates/header/header-menu-box.html:160
 msgid "Veckobrev"
 msgstr "Veckobrev"
 
-#: templates/header/header-menu-box.html:166
+#: templates/header/header-menu-box.html:164
 msgid ""
 "Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på "
 "sektionen"
@@ -296,11 +344,11 @@ msgstr ""
 "Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på "
 "sektionen"
 
-#: templates/header/header-menu-box.html:174
+#: templates/header/header-menu-box.html:172
 msgid "Studiesocial hjälp"
 msgstr "Studiesocial hjälp"
 
-#: templates/header/header-menu-box.html:178
+#: templates/header/header-menu-box.html:176
 msgid ""
 "Om du känner att studierna går tufft,\n"
 "                    du känner dig nere, känner dig kränkt eller "
