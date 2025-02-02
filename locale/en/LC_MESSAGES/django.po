@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-31 16:38+0100\n"
+"POT-Creation-Date: 2025-02-03 00:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,13 +66,13 @@ msgstr "The wiki"
 msgid "wikitext"
 msgstr "also has a list over documents"
 
+#: homepage/templates/homepage/index/aspcal-box.html:5
+msgid "Aspningskalender"
+msgstr "uhh i dont know what to put here yet ^^"
+
 #: homepage/templates/homepage/index/cal-box.html:5
 msgid "Arrangemangskalender"
 msgstr "Event calendar"
-
-#: homepage/templates/homepage/index/fb-box.html:5
-msgid "Sektionen på Facebook"
-msgstr "The divison on Facebook"
 
 #: homepage/templates/homepage/index/food-box.html:5
 msgid "Mat på Campus:"
@@ -379,3 +379,6 @@ msgstr "Studies"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Photos"
+
+#~ msgid "Sektionen på Facebook"
+#~ msgstr "The divison on Facebook"
