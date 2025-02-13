@@ -68,7 +68,7 @@ msgstr "also has a list over documents"
 
 #: homepage/templates/homepage/index/aspcal-box.html:5
 msgid "Aspningskalender"
-msgstr "uhh i dont know what to put here yet ^^"
+msgstr "Aspiration calendar"
 
 #: homepage/templates/homepage/index/cal-box.html:5
 msgid "Arrangemangskalender"
