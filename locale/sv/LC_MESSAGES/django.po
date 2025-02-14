@@ -369,12 +369,3 @@ msgstr "Studier"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Foton"
-
-#~ msgid "Kårkort"
-#~ msgstr "Kårkort"
-
-#~ msgid "Genväg för att ladda ditt kårkort"
-#~ msgstr "Genväg för att ladda ditt kårkort"
-
-#~ msgid "Sektionen på Facebook"
-#~ msgstr "Sektionen på Facebook"
