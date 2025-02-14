@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-03 00:05+0100\n"
+"POT-Creation-Date: 2025-02-14 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -322,26 +322,18 @@ msgid "Boka grupprum på Chalmers"
 msgstr "Book group rooms at Chalmers"
 
 #: templates/header/header-menu-box.html:128
-msgid "Kårkort"
-msgstr "Student Union Card"
-
-#: templates/header/header-menu-box.html:134
-msgid "Genväg för att ladda ditt kårkort"
-msgstr "Shortcut to charge your student union card"
-
-#: templates/header/header-menu-box.html:144
 msgid "Karta"
 msgstr "Map"
 
-#: templates/header/header-menu-box.html:150
+#: templates/header/header-menu-box.html:134
 msgid "Karta över Campus"
 msgstr "Map of campus"
 
-#: templates/header/header-menu-box.html:160
+#: templates/header/header-menu-box.html:144
 msgid "Veckobrev"
 msgstr "Newsletter"
 
-#: templates/header/header-menu-box.html:164
+#: templates/header/header-menu-box.html:148
 msgid ""
 "Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på "
 "sektionen"
@@ -349,11 +341,11 @@ msgstr ""
 "Register to receive the D-division's newsletter to get updates about what's "
 "going on at the division"
 
-#: templates/header/header-menu-box.html:172
+#: templates/header/header-menu-box.html:156
 msgid "Studiesocial hjälp"
 msgstr "Support"
 
-#: templates/header/header-menu-box.html:176
+#: templates/header/header-menu-box.html:160
 msgid ""
 "Om du känner att studierna går tufft,\n"
 "                    du känner dig nere, känner dig kränkt eller "
@@ -379,6 +371,3 @@ msgstr "Studies"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Photos"
-
-#~ msgid "Sektionen på Facebook"
-#~ msgstr "The divison on Facebook"
