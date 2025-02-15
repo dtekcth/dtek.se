@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-14 14:35+0100\n"
+"POT-Creation-Date: 2025-02-15 16:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -267,6 +267,14 @@ msgstr "Equality Committee"
 msgid "Arbetsmarknadsmässa"
 msgstr "Career Fair"
 
+#: templates/footer/footer-right-col.html:160
+msgid "Bakkommitté"
+msgstr "Baking Committee"
+
+#: templates/footer/footer-right-col.html:168
+msgid "Finsmakarkommitté"
+msgstr "Connoisseur Committee"
+
 #: templates/head.html:14
 msgid "Datateknologsektionen på Chalmers"
 msgstr "Division of Computer Science and Engineering at Chalmers"
@@ -371,3 +379,4 @@ msgstr "Studies"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Photos"
+
