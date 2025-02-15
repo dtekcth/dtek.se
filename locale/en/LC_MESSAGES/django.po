@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-15 16:37+0100\n"
+"POT-Creation-Date: 2025-02-15 16:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,19 +220,19 @@ msgid "Arbetsmarknadsgrupp"
 msgstr "Career and Business Relations"
 
 #: templates/footer/footer-right-col.html:64
-msgid "DATA-driftsförening"
-msgstr "System Administrators"
+msgid "Serverdriftskommitté"
+msgstr "System administration Committee"
 
 #: templates/footer/footer-right-col.html:72
 msgid "Fanbärare"
 msgstr "Flag-Bearers"
 
 #: templates/footer/footer-right-col.html:80
-msgid "Idrottsförening"
+msgid "Idrottskommitté"
 msgstr "Sports Committee"
 
 #: templates/footer/footer-right-col.html:88
-msgid "Spelförening"
+msgid "Spelkommitté"
 msgstr "Gaming Committee"
 
 #: templates/footer/footer-right-col.html:96
@@ -379,4 +379,3 @@ msgstr "Studies"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Photos"
-
