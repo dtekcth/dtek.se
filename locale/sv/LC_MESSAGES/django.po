@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-31 16:38+0100\n"
+"POT-Creation-Date: 2025-02-14 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,13 +66,13 @@ msgstr "Wikin"
 msgid "wikitext"
 msgstr "har även en lista över dokument"
 
+#: homepage/templates/homepage/index/aspcal-box.html:5
+msgid "Aspningskalender"
+msgstr "Aspningskalender"
+
 #: homepage/templates/homepage/index/cal-box.html:5
 msgid "Arrangemangskalender"
 msgstr "Arrangemangskalender"
-
-#: homepage/templates/homepage/index/fb-box.html:5
-msgid "Sektionen på Facebook"
-msgstr "Sektionen på Facebook"
 
 #: homepage/templates/homepage/index/food-box.html:5
 msgid "Mat på Campus:"
@@ -317,26 +317,18 @@ msgid "Boka grupprum på Chalmers"
 msgstr "Boka grupprum på Chalmers"
 
 #: templates/header/header-menu-box.html:128
-msgid "Kårkort"
-msgstr "Kårkort"
-
-#: templates/header/header-menu-box.html:134
-msgid "Genväg för att ladda ditt kårkort"
-msgstr "Genväg för att ladda ditt kårkort"
-
-#: templates/header/header-menu-box.html:144
 msgid "Karta"
 msgstr "Karta"
 
-#: templates/header/header-menu-box.html:150
+#: templates/header/header-menu-box.html:134
 msgid "Karta över Campus"
 msgstr "Karta över Campus"
 
-#: templates/header/header-menu-box.html:160
+#: templates/header/header-menu-box.html:144
 msgid "Veckobrev"
 msgstr "Veckobrev"
 
-#: templates/header/header-menu-box.html:164
+#: templates/header/header-menu-box.html:148
 msgid ""
 "Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på "
 "sektionen"
@@ -344,11 +336,11 @@ msgstr ""
 "Anmäl dig till datas veckobrev, med alla arrangemang och annat som händer på "
 "sektionen"
 
-#: templates/header/header-menu-box.html:172
+#: templates/header/header-menu-box.html:156
 msgid "Studiesocial hjälp"
 msgstr "Studiesocial hjälp"
 
-#: templates/header/header-menu-box.html:176
+#: templates/header/header-menu-box.html:160
 msgid ""
 "Om du känner att studierna går tufft,\n"
 "                    du känner dig nere, känner dig kränkt eller "
