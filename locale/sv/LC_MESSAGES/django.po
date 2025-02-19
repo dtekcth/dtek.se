@@ -264,16 +264,12 @@ msgid "Arbetsmarknadsmässa"
 msgstr "Arbetsmarknadsmässa"
 
 #: templates/footer/footer-right-col.html:160
-#, fuzzy
-#| msgid "Bilkommitté"
 msgid "Bakkommitté"
-msgstr "Bilkommitté"
+msgstr "Bakkommitté"
 
 #: templates/footer/footer-right-col.html:168
-#, fuzzy
-#| msgid "Bilkommitté"
 msgid "Finsmakarkommitté"
-msgstr "Bilkommitté"
+msgstr "Finsmakarkommitté"
 
 #: templates/head.html:14
 msgid "Datateknologsektionen på Chalmers"
@@ -381,21 +377,3 @@ msgstr "Studier"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Foton"
-
-#~ msgid "DATA-driftsförening"
-#~ msgstr "DATA-driftsförening"
-
-#~ msgid "Idrottsförening"
-#~ msgstr "Idrottsförening"
-
-#~ msgid "Spelförening"
-#~ msgstr "Spelförening"
-
-#~ msgid "Kårkort"
-#~ msgstr "Kårkort"
-
-#~ msgid "Genväg för att ladda ditt kårkort"
-#~ msgstr "Genväg för att ladda ditt kårkort"
-
-#~ msgid "Sektionen på Facebook"
-#~ msgstr "Sektionen på Facebook"

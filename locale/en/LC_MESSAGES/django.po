@@ -220,10 +220,8 @@ msgid "Arbetsmarknadsgrupp"
 msgstr "Career and Business Relations"
 
 #: templates/footer/footer-right-col.html:64
-#, fuzzy
-#| msgid "Bilkommitté"
 msgid "Serverdriftskommitté"
-msgstr "Division Car Maintainers"
+msgstr "System Administrators"
 
 #: templates/footer/footer-right-col.html:72
 msgid "Fanbärare"
@@ -231,7 +229,7 @@ msgstr "Flag-Bearers"
 
 #: templates/footer/footer-right-col.html:80
 msgid "Idrottskommitté"
-msgstr "Sports committee"
+msgstr "Sports Committee"
 
 #: templates/footer/footer-right-col.html:88
 msgid "Spelkommitté"
@@ -381,21 +379,3 @@ msgstr "Studies"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Photos"
-
-#~ msgid "DATA-driftsförening"
-#~ msgstr "System Administrators"
-
-#~ msgid "Idrottsförening"
-#~ msgstr "Sports Committee"
-
-#~ msgid "Spelförening"
-#~ msgstr "Gaming Committee"
-
-#~ msgid "Kårkort"
-#~ msgstr "Student Union Card"
-
-#~ msgid "Genväg för att ladda ditt kårkort"
-#~ msgstr "Shortcut to charge your student union card"
-
-#~ msgid "Sektionen på Facebook"
-#~ msgstr "The divison on Facebook"
