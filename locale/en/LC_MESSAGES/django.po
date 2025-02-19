@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-15 16:46+0100\n"
+"POT-Creation-Date: 2025-02-19 22:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,8 +220,10 @@ msgid "Arbetsmarknadsgrupp"
 msgstr "Career and Business Relations"
 
 #: templates/footer/footer-right-col.html:64
+#, fuzzy
+#| msgid "Bilkommitté"
 msgid "Serverdriftskommitté"
-msgstr "System administration Committee"
+msgstr "Division Car Maintainers"
 
 #: templates/footer/footer-right-col.html:72
 msgid "Fanbärare"
@@ -229,7 +231,7 @@ msgstr "Flag-Bearers"
 
 #: templates/footer/footer-right-col.html:80
 msgid "Idrottskommitté"
-msgstr "Sports Committee"
+msgstr "Sports committee"
 
 #: templates/footer/footer-right-col.html:88
 msgid "Spelkommitté"
@@ -273,7 +275,7 @@ msgstr "Baking Committee"
 
 #: templates/footer/footer-right-col.html:168
 msgid "Finsmakarkommitté"
-msgstr "Connoisseur Committee"
+msgstr "Connosieur Committee"
 
 #: templates/head.html:14
 msgid "Datateknologsektionen på Chalmers"
@@ -379,3 +381,21 @@ msgstr "Studies"
 #: templates/top-nav-banner.html:23
 msgid "Foton"
 msgstr "Photos"
+
+#~ msgid "DATA-driftsförening"
+#~ msgstr "System Administrators"
+
+#~ msgid "Idrottsförening"
+#~ msgstr "Sports Committee"
+
+#~ msgid "Spelförening"
+#~ msgstr "Gaming Committee"
+
+#~ msgid "Kårkort"
+#~ msgstr "Student Union Card"
+
+#~ msgid "Genväg för att ladda ditt kårkort"
+#~ msgstr "Shortcut to charge your student union card"
+
+#~ msgid "Sektionen på Facebook"
+#~ msgstr "The divison on Facebook"
