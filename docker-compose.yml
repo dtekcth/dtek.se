@@ -3,13 +3,13 @@ version: '3.7'
 services:
     db:
         restart: always
-        image: postgres
+        image: postgres:18
         environment:
             POSTGRES_DB: "dtekportal"
             POSTGRES_PASSWORD: "$DB_PASSWORD"
         volumes:
             # Makes database data persist even if we restart/rebuild container
-            - db_data:/var/lib/postgresql/data
+            - db_data:/var/lib/postgresql/18/data
     web:
         build: .
         restart: always
@@ -24,7 +24,7 @@ services:
             - db
         volumes:
             - ./logs:/logs
-            - static:/code/staticfiles/
+            - static:/staticfiles/
     proxy:
         image: nginx:1-alpine
         restart: unless-stopped

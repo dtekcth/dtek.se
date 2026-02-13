@@ -24,7 +24,7 @@ ENV DB_PORT="5432"
 
 EXPOSE 80
 
-CMD python3 manage.py migrate && python3 manage.py compilemessages && uwsgi --socket 0.0.0.0:3000 --protocol uwsgi --module dtekportal.wsgi
+CMD rm -r /staticfiles/* && python3 manage.py migrate && python3 manage.py compilemessages && cp -r /code/staticfiles/* /staticfiles/. && uwsgi --socket 0.0.0.0:3000 --protocol uwsgi --module dtekportal.wsgi
 
 #CMD /scripts/wait-for-it.sh "$DB_HOST:$DB_PORT" -- \
 #      uwsgi --http-socket ":$PORT" --module dtekportal.wsgi
